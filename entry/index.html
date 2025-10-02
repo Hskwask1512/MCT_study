@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>実験入口</title>
+</head>
+<body>
+  <p>条件を割り当てています。しばらくお待ちください…</p>
+
+  <script>
+  async function assignCondition() {
+    const res = await fetch("https://pipe.jspsych.org/api/condition/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        experimentID: "m5mu97iWbC3I"
+      }),
+    });
+    const response = await res.json();
+    if (!response.error) {
+      const condition = response.condition;
+      if (condition === 1) {
+        window.location.href = "https://username.github.io/mct1/"; // A条件URL
+      } else {
+        window.location.href = "https://username.github.io/mct2/"; // B条件URL
+      }
+    } else {
+      document.body.innerHTML = "条件の割り当てに失敗しました。もう一度お試しください。";
+    }
+  }
+  assignCondition();
+  </script>
+</body>
+</html>
