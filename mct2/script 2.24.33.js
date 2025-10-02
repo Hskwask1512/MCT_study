@@ -36677,12 +36677,12 @@ const study = lab.util.fromObject({
           "left": 0,
           "top": 0,
           "angle": 0,
-          "width": 64,
-          "height": 36.16,
+          "width": 448,
+          "height": 120.05,
           "stroke": null,
           "strokeWidth": 1,
           "fill": "black",
-          "text": "終了",
+          "text": "終了\n報酬を受け取るためのコードは\n\"hjgs234\"です。",
           "fontStyle": "normal",
           "fontWeight": "normal",
           "fontSize": 32,
@@ -36703,26 +36703,29 @@ const study = lab.util.fromObject({
       "messageHandlers": {
         "before:prepare": function anonymous(
 ) {
-//check Tardy
-//ファイル名をユーザーIDにする
-const participantID = this.parameters.participantID
+const participantID = "testuser";
+const filename = participantID + "_data.csv";
 
-//csvファイルで保存する場合
-const filename = participantID + "_data.csv"
-const data = study.internals.controller.datastore.exportCsv();
+// ダミーCSVデータ
+const csv = "trial,response,rt\n1,a,500\n2,b,600";
+const encoded = btoa(unescape(encodeURIComponent(csv)));
 
 fetch("https://pipe.jspsych.org/api/data/", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    Accept: "*/*",
+    Accept: "application/json",
   },
   body: JSON.stringify({
     experimentID: "m5mu97iWbC3I",
     filename: filename,
-    data: data,
+    data: encoded,
+    encoding: "base64"
   }),
-});
+})
+.then(res => res.json().then(j => console.log("レスポンス:", res.status, j)))
+.catch(err => console.error("送信エラー:", err));
+
 }
       },
       "title": "Screen",
