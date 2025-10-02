@@ -36666,14 +36666,49 @@ const study = lab.util.fromObject({
         "": ""
       },
       "parameters": {},
+      "messageHandlers": {},
+      "title": "demographic"
+    },
+    {
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "left": 0,
+          "top": 0,
+          "angle": 0,
+          "width": 64,
+          "height": 36.16,
+          "stroke": null,
+          "strokeWidth": 1,
+          "fill": "black",
+          "text": "終了",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "fontSize": 32,
+          "fontFamily": "sans-serif",
+          "lineHeight": 1.16,
+          "textAlign": "center"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": {},
+      "responses": {
+        "": ""
+      },
+      "parameters": {},
       "messageHandlers": {
         "before:prepare": function anonymous(
 ) {
-// ファイル名をユーザーIDにする
-const participantID = this.parameters.participantID;
+//check Tardy
+//ファイル名をユーザーIDにする
+const participantID = this.parameters.participantID
 
-// csvファイルで保存する場合
-const filename = participantID + "_data.csv";
+//csvファイルで保存する場合
+const filename = participantID + "_data.csv"
 const data = study.internals.controller.datastore.exportCsv();
 
 fetch("https://pipe.jspsych.org/api/data/", {
@@ -36683,15 +36718,14 @@ fetch("https://pipe.jspsych.org/api/data/", {
     Accept: "*/*",
   },
   body: JSON.stringify({
-    experimentID: "m5mu97iWbC3I", // ← DataPipeのInfoページにあるID
+    experimentID: "m5mu97iWbC3I",
     filename: filename,
     data: data,
   }),
 });
-
 }
       },
-      "title": "demographic",
+      "title": "Screen",
       "tardy": true
     }
   ]
