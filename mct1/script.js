@@ -36682,26 +36682,30 @@ const study = lab.util.fromObject({
       "messageHandlers": {
         "before:prepare": function anonymous(
 ) {
-//check Tardy
-//ファイル名をユーザーIDにする
-const participantID = this.parameters.participantID
+// 参加者ID（未設定なら anon にする）
+const participantID = this.parameters.participantID || "anon";
+const filename = participantID + "_data.csv";
 
-//csvファイルで保存する場合
-const filename = participantID + "_data.csv"
-const data = study.internals.controller.datastore.exportCsv();
+// lab.js のデータをCSVに変換して Base64 エンコード
+const csv = study.internals.controller.datastore.exportCsv();
+const encoded = btoa(unescape(encodeURIComponent(csv)));
 
 fetch("https://pipe.jspsych.org/api/data/", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    Accept: "*/*",
+    Accept: "application/json",
   },
   body: JSON.stringify({
-    experimentID: "m5mu97iWbC3I",
+    experimentID: "m5mu97iWbC3I", // DataPipeのID
     filename: filename,
-    data: data,
+    data: encoded,
+    encoding: "base64"
   }),
-});
+})
+.then(res => res.json().then(j => console.log("レスポンス:", res.status, j)))
+.catch(err => console.error("送信エラー:", err));
+
 }
       },
       "title": "Screen",
