@@ -36703,28 +36703,28 @@ const study = lab.util.fromObject({
       "messageHandlers": {
         "before:prepare": function anonymous(
 ) {
-const participantID = "testuser";
-const filename = participantID + "_data.csv";
+// IDを取得（外部から与えられなければランダム生成）
+const participantID = this.parameters.participantID || this.random.uuid4();
 
-// ダミーCSVデータ
-const csv = "trial,response,rt\n1,a,500\n2,b,600";
-const encoded = btoa(unescape(encodeURIComponent(csv)));
+// ファイル名を作成（タイムスタンプ付きでユニーク化推奨）
+const filename = participantID + "_" + Date.now() + "_data.csv";
 
+// CSVデータをエクスポート
+const data = study.internals.controller.datastore.exportCsv();
+
+// DataPipeに送信
 fetch("https://pipe.jspsych.org/api/data/", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    Accept: "application/json",
+    Accept: "*/*",
   },
   body: JSON.stringify({
     experimentID: "m5mu97iWbC3I",
     filename: filename,
-    data: encoded,
-    encoding: "base64"
+    data: data,
   }),
-})
-.then(res => res.json().then(j => console.log("レスポンス:", res.status, j)))
-.catch(err => console.error("送信エラー:", err));
+});
 
 }
       },
