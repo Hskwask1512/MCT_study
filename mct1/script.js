@@ -28,7 +28,7 @@ const study = lab.util.fromObject({
       "items": [
         {
           "type": "text",
-          "content": "\u003Ch1\u003Eオンライン実験のご案内（PC専用）\u003C\u002Fh1\u003E\n\u003Cul\u003E\n  \u003Cli\u003E本実験は \u003Cstrong\u003E3つの課題\u003C\u002Fstrong\u003E と \u003Cstrong\u003E2つのアンケート\u003C\u002Fstrong\u003E で構成されています。\u003C\u002Fli\u003E\n  \u003Cli\u003E所要時間：\u003Cstrong\u003E約40分\u003C\u002Fstrong\u003E（回線や個人差で±10分）\u003C\u002Fli\u003E\n  \u003Cli\u003EPC（ノート\u002Fデスクトップ）専用。\u003Cstrong\u003Eスマホ\u002Fタブレット不可\u003C\u002Fstrong\u003E\u003C\u002Fli\u003E\n  \u003Cli\u003E音声が出ます。静かで実験に集中できる場所で実施してください。\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"
+          "content": "\u003Ch1\u003Eオンライン実験のご案内（PC専用）\u003C\u002Fh1\u003E\n\u003Cul\u003E\n  \u003Cli\u003E本実験は \u003Cstrong\u003E3つの課題\u003C\u002Fstrong\u003E と \u003Cstrong\u003E2つのアンケート\u003C\u002Fstrong\u003E で構成されています。\u003C\u002Fli\u003E\n  \u003Cli\u003E所要時間：\u003Cstrong\u003E約1時間\u003C\u002Fstrong\u003E（回線や個人差で±10分）\u003C\u002Fli\u003E\n  \u003Cli\u003EPC（ノート\u002Fデスクトップ）専用。\u003Cstrong\u003Eスマホ\u002Fタブレット不可\u003C\u002Fstrong\u003E\u003C\u002Fli\u003E\n  \u003Cli\u003E音声が出ます。静かで実験に集中できる場所で実施してください。\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"
         }
       ],
       "scrollTop": true,
@@ -57,7 +57,7 @@ const study = lab.util.fromObject({
           "items": [
             {
               "type": "text",
-              "content": "\u003Cp\u003Eこの調査は，イメージのしやすさの測定手法の開発を目的としています。\u003C\u002Fp\u003E\n\u003Cp\u003E回答に正解・不正解はありません。ご自身の思ったことを率直にご回答ください。\u003C\u002Fp\u003E\n\u003Cp\u003E以下の説明をよく読み，同意をしてくださった場合に，調査に参加していただくことになっています。\u003C\u002Fp\u003E\n\u003Cp\u003Eこの実験に想定される所要時間は，約20-30分前後です。\u003C\u002Fp\u003E\n\n\u003Cp\u003E本実験は３つのテストと2つの質問紙で構成されています。\u003C\u002Fp\u003E\nテスト毎に、実験者を呼ぶようアナウンスがあるので、室外で待機している実験者を呼んでください。\n\n準備ができたら、下の”始める”ボタンをクリックしてください。\n最初の実験が始まります。",
+              "content": "\u003Cp\u003Eこの調査は，イメージのしやすさの測定手法の開発を目的としています。\u003C\u002Fp\u003E\n\u003Cp\u003E回答に正解・不正解はありません。ご自身の思ったことを率直にご回答ください。\u003C\u002Fp\u003E\n\u003Cp\u003E以下の説明をよく読み，同意をしてくださった場合に，調査に参加していただくことになっています。\u003C\u002Fp\u003E\n\u003Cp\u003Eこの実験に想定される所要時間は，約20-30分前後です。\u003C\u002Fp\u003E\n\n\n\n準備ができたら、下の”始める”ボタンをクリックしてください。\n最初の実験が始まります。",
               "title": "イメージのしやすさに関する実験"
             }
           ],
@@ -4398,7 +4398,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fvisual01",
+                  "title": "jvisual01",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -4617,7 +4617,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"001a_Kaminari.wav\"] }",
+                            "src": "${ this.files[\"001b_Ooame.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -4715,17 +4715,17 @@ const study = lab.util.fromObject({
                         "001a_Kaminari.wav": "embedded\u002F852e1cd295570601c496cbf6b752eec4367efb7370578ea7d4b7e3d8e24009bf.wav"
                       },
                       "responses": {
-                        "keydown(f)": "correct",
-                        "keydown(j)": "error"
+                        "keydown(j)": "correct",
+                        "keydown(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual01",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"001b_Ooame.wav\"] }",
+                            "src": "${ this.files[\"001a_Kaminari.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -4737,7 +4737,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -4749,7 +4749,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jvisual02",
+                  "title": "fvisual02",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -4970,7 +4970,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"002b_tamago.wav\"] }",
+                            "src": "${ this.files[\"002a_azuki.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -5069,17 +5069,17 @@ const study = lab.util.fromObject({
                         "002a_azuki.wav": "embedded\u002Fd76937cddf4ffbbf46ed41c66b80937c96822e52e1698cb0ee4abd34a5df542f.wav"
                       },
                       "responses": {
-                        "keydown(j)": "correct",
-                        "keydown(f)": "error"
+                        "keydown(f)": "correct",
+                        "keydown(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual02",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"002a_azuki.wav\"] }",
+                            "src": "${ this.files[\"002b_tamago.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -5091,7 +5091,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -5103,7 +5103,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fvisual03",
+                  "title": "jvisual03",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -5325,7 +5325,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"003a_Kuro.wav\"] }",
+                            "src": "${ this.files[\"003b_shiro.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -5425,17 +5425,17 @@ const study = lab.util.fromObject({
                         "003a_Kuro.wav": "embedded\u002F82f0058095ad3e0af153beec9abc4577a16146f4c9a28f1febd6c64be2da85c9.wav"
                       },
                       "responses": {
-                        "keydown(f)": "correct",
-                        "keydown(j)": "error"
+                        "keydown(j)": "correct",
+                        "keydown(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual03",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"003b_shiro.wav\"] }",
+                            "src": "${ this.files[\"003a_Kuro.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -5447,7 +5447,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -5459,7 +5459,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jvisual04",
+                  "title": "fvisual04",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -5683,7 +5683,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"004b_negi.wav\"] }",
+                            "src": "${ this.files[\"004a_nasu.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -5784,17 +5784,17 @@ const study = lab.util.fromObject({
                         "004a_nasu.wav": "embedded\u002Fc1ea3376d4125176044e509f66f695a75b0b238a2e549cbc7924a71171a16179.wav"
                       },
                       "responses": {
-                        "keydown(j)": "correct",
-                        "keydown(f)": "error"
+                        "keydown(f)": "correct",
+                        "keydown(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual04",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"004a_nasu.wav\"] }",
+                            "src": "${ this.files[\"004b_negi.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -5806,7 +5806,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -5818,7 +5818,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fvisual05",
+                  "title": "jvisual05",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -6030,7 +6030,8 @@ const study = lab.util.fromObject({
                         "003a_Kuro.wav": "embedded\u002F82f0058095ad3e0af153beec9abc4577a16146f4c9a28f1febd6c64be2da85c9.wav",
                         "004a_nasu.wav": "embedded\u002F6500ad1976f9d1812c3d4e4aad98548a5593b7796fd1ee78ccf3b6795dad9575.wav",
                         "006a_cocoa.wav": "embedded\u002Fb98877ab7e1de5530472e3acbefef28eb4d8c003c43104fbf8603f2dc9ee7743.wav",
-                        "006b_sugar.wav": "embedded\u002Ffc57d96eb8bec34ded1baa3618525d7f44e60d0e2c3524c6cc4e82282380452c.wav"
+                        "006b_sugar.wav": "embedded\u002Ffc57d96eb8bec34ded1baa3618525d7f44e60d0e2c3524c6cc4e82282380452c.wav",
+                        "005b_miso.wav": "embedded\u002Fb1a78ba1f5a5464437533d2c84f76fe22494928d97c111ea95a9787070f8c92d.wav"
                       },
                       "responses": {
                         "": ""
@@ -6043,7 +6044,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"006a_cocoa.wav\"] }",
+                            "src": "${ this.files[\"006b_sugar.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -6142,20 +6143,21 @@ const study = lab.util.fromObject({
                         "003b_shiro.wav": "embedded\u002F16c88f4eccc538c4357a59506791a46466c8b643aa5c58e3fd8060b1c223fbfc.wav",
                         "004b_negi.wav": "embedded\u002F6500ad1976f9d1812c3d4e4aad98548a5593b7796fd1ee78ccf3b6795dad9575.wav",
                         "006b_sugar.wav": "embedded\u002Ffc57d96eb8bec34ded1baa3618525d7f44e60d0e2c3524c6cc4e82282380452c.wav",
-                        "006a_cocoa.wav": "embedded\u002Fb98877ab7e1de5530472e3acbefef28eb4d8c003c43104fbf8603f2dc9ee7743.wav"
+                        "006a_cocoa.wav": "embedded\u002Fb98877ab7e1de5530472e3acbefef28eb4d8c003c43104fbf8603f2dc9ee7743.wav",
+                        "005a_sio.wav": "embedded\u002F1e5f1e4389406f0ded3f943c8ccfe9f60e760a697af7d16977c7c107145b0f0f.wav"
                       },
                       "responses": {
-                        "keydown(f)": "correct",
-                        "keydown(j)": "error"
+                        "keydown(j)": "correct",
+                        "keydown(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual05",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"006b_sugar.wav\"] }",
+                            "src": "${ this.files[\"006a_cocoa.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -6167,7 +6169,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -6179,7 +6181,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jvisual06",
+                  "title": "fvisual06",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -6405,7 +6407,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"007b_milk.wav\"] }",
+                            "src": "${ this.files[\"007a_cola.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -6508,29 +6510,29 @@ const study = lab.util.fromObject({
                         "007a_cola.wav": "embedded\u002F274ae79adcab8618f6cfdc9f798442d1c67eb9d534a0cabe50c0bfbeba8d4e2e.wav"
                       },
                       "responses": {
-                        "keydown(j)": "correct",
-                        "keydown(f)": "error"
+                        "keydown(f)": "correct",
+                        "keydown(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual06",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"007a_cola.wav\"] }",
+                            "src": "${ this.files[\"007b_milk.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
                           "pan": "",
                           "rampUp": "",
                           "rampDown": "",
-                          "start": 0,
-                          "stop": "2000",
+                          "start": 1,
+                          "stop": 2001,
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -6542,7 +6544,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fvisual07",
+                  "title": "jvisual07",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -6769,7 +6771,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"008a_karasu.wav\"] }",
+                            "src": "${ this.files[\"008b_kamome.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -6873,17 +6875,17 @@ const study = lab.util.fromObject({
                         "008a_karasu.wav": "embedded\u002F8eff050cd12712588f1bf97d0468bd8bb94710dff3d934826c7f17343aba81f9.wav"
                       },
                       "responses": {
-                        "keydown(f)": "correct",
-                        "keydown(j)": "error"
+                        "keydown(j)": "correct",
+                        "keydown(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual07",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"008b_kamome.wav\"] }",
+                            "src": "${ this.files[\"008a_karasu.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -6895,7 +6897,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -6907,7 +6909,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jvisual08",
+                  "title": "fvisual08",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -7135,7 +7137,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"009b_milk.wav\"] }",
+                            "src": "${ this.files[\"009a_coffee.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -7240,17 +7242,17 @@ const study = lab.util.fromObject({
                         "009a_coffee.wav": "embedded\u002Fbc6ecbe6f4d874a70ba08e05b760a6d6eb35bddd88c9a0e2a1bdf9a3247b05ae.wav"
                       },
                       "responses": {
-                        "keydown(j)": "correct",
-                        "keydown(f)": "error"
+                        "keydown(f)": "correct",
+                        "keydown(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual08",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"009a_coffee.wav\"] }",
+                            "src": "${ this.files[\"009b_milk.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -7262,7 +7264,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -7274,7 +7276,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fvisual09",
+                  "title": "jvisual09",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -7504,7 +7506,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"010a_umi.wav\"] }",
+                            "src": "${ this.files[\"010b_tsuki.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -7610,17 +7612,17 @@ const study = lab.util.fromObject({
                         "010a_umi.wav": "embedded\u002Faf674ec14e1c92e33b5364b6b8153eb477e625442f4bce26138cf9984a4db853.wav"
                       },
                       "responses": {
-                        "keydown(f)": "correct",
-                        "keydown(j)": "error"
+                        "keydown(j)": "correct",
+                        "keydown(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual09",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"010b_tsuki.wav\"] }",
+                            "src": "${ this.files[\"010a_umi.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -7632,7 +7634,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -7644,7 +7646,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jvisual10",
+                  "title": "fvisual10",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -7876,7 +7878,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"011b_tarako.wav\"] }",
+                            "src": "${ this.files[\"011a_natto.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -7983,17 +7985,17 @@ const study = lab.util.fromObject({
                         "011a_natto.wav": "embedded\u002F9720f210674fbe296de70bab0e850758ea0d3f03590a930dd9b06f96c2057079.wav"
                       },
                       "responses": {
-                        "keydown(j)": "correct",
-                        "keydown(f)": "error"
+                        "keydown(f)": "correct",
+                        "keydown(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual10",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"011a_natto.wav\"] }",
+                            "src": "${ this.files[\"011b_tarako.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -8005,7 +8007,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -8017,7 +8019,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fvisual11",
+                  "title": "jvisual11",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -8252,7 +8254,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"012a_yuki.wav\"] }",
+                            "src": "${ this.files[\"012b_doro.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -8360,17 +8362,17 @@ const study = lab.util.fromObject({
                         "012a_yuki.wav": "embedded\u002F19966fc52ee20af0dc1eebee7de0d465ca73ad184338b3814d1e2ffb4e4e2f2d.wav"
                       },
                       "responses": {
-                        "keydown(f)": "correct",
-                        "keydown(j)": "error"
+                        "keydown(j)": "correct",
+                        "keydown(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual11",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"012b_doro.wav\"] }",
+                            "src": "${ this.files[\"012a_yuki.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -8382,7 +8384,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -8394,7 +8396,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jvisual12",
+                  "title": "fvisual12",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -8630,7 +8632,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"013b_daizu.wav\"] }",
+                            "src": "${ this.files[\"013a_tomato.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -8739,17 +8741,17 @@ const study = lab.util.fromObject({
                         "013a_tomato.wav": "embedded\u002F4d80ecb6511135d7ca8af977a00f4f897781e1b4607423868865410bb8996ae1.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual12",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"013a_tomato.wav\"] }",
+                            "src": "${ this.files[\"013b_daizu.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -8761,7 +8763,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -8773,7 +8775,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fvisual13",
+                  "title": "jvisual13",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -9012,7 +9014,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"015a_kyuuri.wav\"] }",
+                            "src": "${ this.files[\"015b_ninzin.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -9123,17 +9125,17 @@ const study = lab.util.fromObject({
                         "015b_ninzin.wav": "embedded\u002F87b87944f3be3046da3e27d0a00822a4f302b4bfa8ddc350c4768f6f2b216168.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual13",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"015b_ninzin.wav\"] }",
+                            "src": "${ this.files[\"015a_kyuuri.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -9145,7 +9147,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -9157,7 +9159,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jvisual14",
+                  "title": "fvisual14",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -9384,7 +9386,8 @@ const study = lab.util.fromObject({
                         "014a_tire.wav": "embedded\u002F576470a7048e988d369e38430b88663c518c7fd745ad6fd6513e4f6792874978.wav",
                         "015a_kyuuri.wav": "embedded\u002Fe63fbe41232e4d28512c831f60a7a67741d9c3602b35ec478826680947f75bd6.wav",
                         "014b_garasu.wav": "embedded\u002Fe2fd2df105ef947d6bed31b742df76c7ca599ac517e70fa96689b67692e01384.wav",
-                        "014b_hiru_.wav": "embedded\u002Fb86f3c7ad4ccb3c224313f3eba3223ce8c89da41bfe7f56638159621027281d8.wav"
+                        "014b_hiru_.wav": "embedded\u002Fb86f3c7ad4ccb3c224313f3eba3223ce8c89da41bfe7f56638159621027281d8.wav",
+                        "014a_yoru_.wav": "embedded\u002F5cad79ada4cb5534009affcd2c01ff358926e591eeb44248cd02ea98b6696606.wav"
                       },
                       "responses": {
                         "": ""
@@ -9397,7 +9400,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"014b_hiru_.wav\"] }",
+                            "src": "${ this.files[\"014a_yoru_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -9506,20 +9509,21 @@ const study = lab.util.fromObject({
                         "014b_garasu.wav": "embedded\u002Fe2fd2df105ef947d6bed31b742df76c7ca599ac517e70fa96689b67692e01384.wav",
                         "015b_ninzin.wav": "embedded\u002F87b87944f3be3046da3e27d0a00822a4f302b4bfa8ddc350c4768f6f2b216168.wav",
                         "014a_tire.wav": "embedded\u002F576470a7048e988d369e38430b88663c518c7fd745ad6fd6513e4f6792874978.wav",
-                        "014a_yoru_.wav": "embedded\u002F5cad79ada4cb5534009affcd2c01ff358926e591eeb44248cd02ea98b6696606.wav"
+                        "014a_yoru_.wav": "embedded\u002F5cad79ada4cb5534009affcd2c01ff358926e591eeb44248cd02ea98b6696606.wav",
+                        "014b_hiru_.wav": "embedded\u002Fb86f3c7ad4ccb3c224313f3eba3223ce8c89da41bfe7f56638159621027281d8.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual14",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"014a_yoru_.wav\"] }",
+                            "src": "${ this.files[\"014b_hiru_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -9531,7 +9535,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -9543,7 +9547,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fvisual15",
+                  "title": "jvisual15",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -9785,7 +9789,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"016a_apple.wav\"] }",
+                            "src": "${ this.files[\"016b_grape.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -9897,17 +9901,17 @@ const study = lab.util.fromObject({
                         "016a_apple.wav": "embedded\u002Fbd4ebed10568f8f6f9c1b0bdb0a17025c354deeffe540794e6308d80cc2c3dda.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual15",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"016b_grape.wav\"] }",
+                            "src": "${ this.files[\"016a_apple.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -9919,7 +9923,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -9931,7 +9935,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jvisual16",
+                  "title": "fvisual16",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -10174,7 +10178,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"017b_tsuchi.wav\"] }",
+                            "src": "${ this.files[\"017a_stone.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -10287,17 +10291,17 @@ const study = lab.util.fromObject({
                         "017a_stone.wav": "embedded\u002F83c1cb0f5f6681afb8ce09aaf0253d93094bf9efe2ef10da33251605be733dfe.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual16",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"017a_stone.wav\"] }",
+                            "src": "${ this.files[\"017b_tsuchi.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -10309,7 +10313,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -10321,7 +10325,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fvisual17",
+                  "title": "jvisual17",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -10565,7 +10569,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"018a_bread.wav\"] }",
+                            "src": "${ this.files[\"018b_kome.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -10680,17 +10684,17 @@ const study = lab.util.fromObject({
                         "018a_bread.wav": "embedded\u002Fe7cc8f94634ff8392dcbc8e5d1964b637ff34eb2b70a50588bd66af5ae09b5e4.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual17",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"018b_kome.wav\"] }",
+                            "src": "${ this.files[\"018a_bread.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -10702,7 +10706,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -10714,7 +10718,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jvisual18",
+                  "title": "fvisual18",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -10959,7 +10963,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"019b_vanilla.wav\"] }",
+                            "src": "${ this.files[\"019a_choco.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -11074,17 +11078,17 @@ const study = lab.util.fromObject({
                         "019a_choco.wav": "embedded\u002F6f7d1c26c90ed598dcfa5f38ab5be9f120f72eea8ed6cce91ae5bdb6bc6a54b4.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual18",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"019a_choco.wav\"] }",
+                            "src": "${ this.files[\"019b_vanilla.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -11096,7 +11100,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -11469,12 +11473,12 @@ const study = lab.util.fromObject({
                         "005b_miso.wav": "embedded\u002Fb1a78ba1f5a5464437533d2c84f76fe22494928d97c111ea95a9787070f8c92d.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual19",
                       "timeline": [
                         {
                           "type": "sound",
@@ -11491,7 +11495,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 }
@@ -11544,7 +11548,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jAuditory01",
+                  "title": "fAuditory01",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -11793,7 +11797,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"001b_helmet.wav\"] }",
+                            "src": "${ this.files[\"001a_dryer.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -11909,17 +11913,17 @@ const study = lab.util.fromObject({
                         "001a_dryer.wav": "embedded\u002F0c2282eeb1df65e3bfcdb641ad0e71063053e088f2b6ca560420b15fec79ee18.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory01",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"001a_dryer.wav\"] }",
+                            "src": "${ this.files[\"001b_helmet.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -11931,7 +11935,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -11943,7 +11947,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fAuditory02",
+                  "title": "jAuditory02",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -12193,7 +12197,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"002a_cymbal.wav\"] }",
+                            "src": "${ this.files[\"002b_guitar.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -12310,17 +12314,17 @@ const study = lab.util.fromObject({
                         "002b_guitar.wav": "embedded\u002F471b27b55066c01e0446ba69ffcd9e41023c6da62554bde1c2db7d1ef7c1f6ee.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory02",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"002b_guitar.wav\"] }",
+                            "src": "${ this.files[\"002a_cymbal.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -12332,7 +12336,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -12344,7 +12348,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jAuditory03",
+                  "title": "fAuditory03",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -12594,7 +12598,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"003b_car.wav\"] }",
+                            "src": "${ this.files[\"003a_train.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -12711,17 +12715,17 @@ const study = lab.util.fromObject({
                         "003a_train.wav": "embedded\u002F9a29cf0e8062a07c41058ec6f074fc228e831d680ccc710a243e8d5b20ab7c1c.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory03",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"003a_train.wav\"] }",
+                            "src": "${ this.files[\"003b_car.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -12733,7 +12737,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -12745,7 +12749,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fAuditory04",
+                  "title": "jAuditory04",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -12996,7 +13000,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"004a_pistol.wav\"] }",
+                            "src": "${ this.files[\"004b_stovepipe.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -13114,17 +13118,17 @@ const study = lab.util.fromObject({
                         "004a_pistol.wav": "embedded\u002Faf0bdb63c02a3f8a13e7b5e8eb70aebb0275375632e79ce008cf38fc78757c97.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory04",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"004b_stovepipe.wav\"] }",
+                            "src": "${ this.files[\"004a_pistol.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -13136,7 +13140,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -13148,7 +13152,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jAuditory05",
+                  "title": "fAuditory05",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -13401,7 +13405,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"005b_bike.wav\"] }",
+                            "src": "${ this.files[\"005a_airplane.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -13521,17 +13525,17 @@ const study = lab.util.fromObject({
                         "005a_airplane.wav": "embedded\u002F017ab1d047702f0e541291f48382a3cfc42583235853d0c569b5357e6a210fbb.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory05",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"005a_airplane.wav\"] }",
+                            "src": "${ this.files[\"005b_bike.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -13543,7 +13547,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -13555,7 +13559,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fAuditory06",
+                  "title": "jAuditory06",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -13809,7 +13813,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"006a_pig.wav\"] }",
+                            "src": "${ this.files[\"006b_snake.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -13930,17 +13934,17 @@ const study = lab.util.fromObject({
                         "006b_snake.wav": "embedded\u002Fa0036f2ac927bad417eade8ef37ad27ea7e4b358e340de7b9d2c827f55cf91d3.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory06",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"006b_snake.wav\"] }",
+                            "src": "${ this.files[\"006a_pig.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -13952,7 +13956,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -13964,7 +13968,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jAuditory07",
+                  "title": "fAuditory07",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -14219,7 +14223,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"007b_ike.wav\"] }",
+                            "src": "${ this.files[\"007a_taki.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -14341,29 +14345,29 @@ const study = lab.util.fromObject({
                         "007a_taki.wav": "embedded\u002Fdcab666047866aaa3eabd9ee236afacf9a6a4da85611b3b486b6e75c3163e70b.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory07",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"007a_taki.wav\"] }",
+                            "src": "${ this.files[\"007b_ike.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
                           "pan": "",
                           "rampUp": "",
                           "rampDown": "",
-                          "start": 0,
-                          "stop": "2000",
+                          "start": 1,
+                          "stop": 2001,
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -14375,7 +14379,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fAuditory08",
+                  "title": "jAuditory08",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -14618,7 +14622,8 @@ const study = lab.util.fromObject({
                         "006b_snake.wav": "embedded\u002Fa0036f2ac927bad417eade8ef37ad27ea7e4b358e340de7b9d2c827f55cf91d3.wav",
                         "007a_taki.wav": "embedded\u002Fdcab666047866aaa3eabd9ee236afacf9a6a4da85611b3b486b6e75c3163e70b.wav",
                         "008b_photo.wav": "embedded\u002F1a77792162e3dd529d12c0c522dbea8de2d7f5a2899cd31b098a556cba032eec.wav",
-                        "008a_movie.wav": "embedded\u002F25c1c4992791be75a0ffb2a6bcb81d149cdfbf2175d42371d189b4341b902873.wav"
+                        "008a_movie.wav": "embedded\u002F25c1c4992791be75a0ffb2a6bcb81d149cdfbf2175d42371d189b4341b902873.wav",
+                        "008b_photo_.wav": "embedded\u002Fe228d37c457eedd7eefc436e4a4f5f98b3303ebd6b21e4f9658d434c70b52d30.wav"
                       },
                       "responses": {
                         "": ""
@@ -14631,7 +14636,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"008a_movie.wav\"] }",
+                            "src": "${ this.files[\"008b_photo_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -14754,17 +14759,17 @@ const study = lab.util.fromObject({
                         "008b_photo.wav": "embedded\u002F1a77792162e3dd529d12c0c522dbea8de2d7f5a2899cd31b098a556cba032eec.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory08",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"008b_photo.wav\"] }",
+                            "src": "${ this.files[\"008a_movie.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -14776,7 +14781,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -14788,7 +14793,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jAuditory09",
+                  "title": "fAuditory09",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -15046,7 +15051,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"009b_castanets.wav\"] }",
+                            "src": "${ this.files[\"009a_violin.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -15170,17 +15175,17 @@ const study = lab.util.fromObject({
                         "009a_violin.wav": "embedded\u002F23531c70a7982db3b1ece979ad1a51352ff7404074b065a1d2c7899cb91ed812.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory09",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"009a_violin.wav\"] }",
+                            "src": "${ this.files[\"009b_castanets.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -15192,7 +15197,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -15204,7 +15209,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fAuditory10",
+                  "title": "jAuditory10",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -15463,7 +15468,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"010a_dog.wav\"] }",
+                            "src": "${ this.files[\"010b_cat.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -15588,17 +15593,17 @@ const study = lab.util.fromObject({
                         "010b_cat.wav": "embedded\u002F11faad254ae76876576376b0ddf0c9b3776d773216bb95068d27b3c05f55f12c.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory10",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"010b_cat.wav\"] }",
+                            "src": "${ this.files[\"010a_dog.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -15610,7 +15615,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -15622,7 +15627,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jAuditory11",
+                  "title": "fAuditory11",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -15882,7 +15887,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"011b_yuki.wav\"] }",
+                            "src": "${ this.files[\"011a_rain.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -16008,17 +16013,17 @@ const study = lab.util.fromObject({
                         "011a_rain.wav": "embedded\u002F2fffe7374eb88ad7fa1327dc6f96ba804999b33ee1be87a3637ac73649531772.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory11",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"011a_rain.wav\"] }",
+                            "src": "${ this.files[\"011b_yuki.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -16030,7 +16035,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -16042,7 +16047,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fAuditory12",
+                  "title": "jAuditory12",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -16304,7 +16309,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"012a_highheels.wav\"] }",
+                            "src": "${ this.files[\"012b_snekers.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -16431,17 +16436,17 @@ const study = lab.util.fromObject({
                         "012b_snekers.wav": "embedded\u002Fcb3bc352d5ecffe05df6919e56cd933178a2d8a665e958fbb6a2fe4f50b86226.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory12",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"012b_snekers.wav\"] }",
+                            "src": "${ this.files[\"012a_highheels.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -16453,7 +16458,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -16465,7 +16470,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jAuditory13",
+                  "title": "fAuditory13",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -16728,7 +16733,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"013b_smoke.wav\"] }",
+                            "src": "${ this.files[\"013a_hanabi.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -16856,17 +16861,17 @@ const study = lab.util.fromObject({
                         "013a_hanabi.wav": "embedded\u002Fbda4ba310f4c82c3fc10e640c31271425a8c7aea186ffa800fac5f551e9a74b7.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory13",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"013a_hanabi.wav\"] }",
+                            "src": "${ this.files[\"013b_smoke.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -16878,7 +16883,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 }
@@ -16937,7 +16942,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jTactile01",
+                  "title": "fTactile01",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -17189,7 +17194,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"001b_makura_.wav\"] }",
+                            "src": "${ this.files[\"001a_brushes.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -17303,20 +17308,21 @@ const study = lab.util.fromObject({
                         "019b_vanilla.wav": "embedded\u002F4c9baaf26e628bc86fd6b9a74346fd55d9a89208f13bfc0bdc37587c3ae22d82.wav",
                         "001b_helmet.wav": "embedded\u002Fadcd4f80f27edd33e6c8428afdebfb6f182cd5024bb9c574117751a41f424663.wav",
                         "001b_sponges.wav": "embedded\u002Fbcab27280389688bf7380830898ddcc4647388003b36ce20c1bb37cd54451578.wav",
-                        "001a_brushes.wav": "embedded\u002F5a5cb6dfd61815a511059659dad73259959f203fd9aec6761cebd965cfc7522d.wav"
+                        "001a_brushes.wav": "embedded\u002F5a5cb6dfd61815a511059659dad73259959f203fd9aec6761cebd965cfc7522d.wav",
+                        "001b_makura_.wav": "embedded\u002F6c9508eb09716fcbbbecb025fbe2ee240ea6ce950784a52615defcffcdd559f0.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile01",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"001a_brushes.wav\"] }",
+                            "src": "${ this.files[\"001b_makura_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -17328,7 +17334,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -17340,7 +17346,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fTactile02",
+                  "title": "jTactile02",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -17523,8 +17529,8 @@ const study = lab.util.fromObject({
                           "pan": "",
                           "rampUp": "",
                           "rampDown": "",
-                          "start": 0,
-                          "stop": 2000,
+                          "start": 1,
+                          "stop": 2001,
                           "priority": 0
                         }
                       ]
@@ -17579,7 +17585,8 @@ const study = lab.util.fromObject({
                         "001a_dryer.wav": "embedded\u002F0c2282eeb1df65e3bfcdb641ad0e71063053e088f2b6ca560420b15fec79ee18.wav",
                         "002b_guitar.wav": "embedded\u002F471b27b55066c01e0446ba69ffcd9e41023c6da62554bde1c2db7d1ef7c1f6ee.wav",
                         "002b_skin.wav": "embedded\u002Fbbc6f7eea4d863c856e90c5fde7d75124577263073ba3275eb259cb2525b06ac.wav",
-                        "002a_hige.wav": "embedded\u002F406ce4651be9d1c10f796906f185076013ca1343f6929daeb1ebcbacad18d248.wav"
+                        "002a_hige.wav": "embedded\u002F406ce4651be9d1c10f796906f185076013ca1343f6929daeb1ebcbacad18d248.wav",
+                        "002b_hifu_.wav": "embedded\u002F434481fca71cbafa127eb24edafa6d823518ce76d750e2582bc72a6f91aa24be.wav"
                       },
                       "responses": {
                         "": ""
@@ -17592,7 +17599,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"002a_hige.wav\"] }",
+                            "src": "${ this.files[\"002b_hifu_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -17713,17 +17720,17 @@ const study = lab.util.fromObject({
                         "002b_hifu_.wav": "embedded\u002F434481fca71cbafa127eb24edafa6d823518ce76d750e2582bc72a6f91aa24be.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile02",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"002b_hifu_.wav\"] }",
+                            "src": "${ this.files[\"002a_hige.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -17735,7 +17742,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -17747,7 +17754,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jTactile03",
+                  "title": "fTactile03",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -17999,7 +18006,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"003b_apple.wav\"] }",
+                            "src": "${ this.files[\"003a_banana.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -18117,17 +18124,17 @@ const study = lab.util.fromObject({
                         "003a_banana.wav": "embedded\u002F21bbd42d1916a7625cfe286ef83085faedfc76e804106860831455a991a7acd8.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile03",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"003a_banana.wav\"] }",
+                            "src": "${ this.files[\"003b_apple.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -18139,7 +18146,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -18151,7 +18158,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fTactile04",
+                  "title": "jTactile04",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -18405,7 +18412,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"004a_cake.wav\"] }",
+                            "src": "${ this.files[\"004b_cheese.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -18525,17 +18532,17 @@ const study = lab.util.fromObject({
                         "004b_cheese.wav": "embedded\u002F9ea940603558fcd68aaad3e342e570b88caa09f6bc6791106b0d8966043645ac.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile04",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"004b_cheese.wav\"] }",
+                            "src": "${ this.files[\"004a_cake.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -18547,7 +18554,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -18559,7 +18566,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jTactile05",
+                  "title": "fTactile05",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -18814,7 +18821,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"005b_curtains.wav\"] }",
+                            "src": "${ this.files[\"005a_cushions.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -18935,17 +18942,17 @@ const study = lab.util.fromObject({
                         "005a_cushions.wav": "embedded\u002F0fc81bc6fa07c8e7a99ffae021dbab783cd943f412234cd04776dee10e1c4710.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile05",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"005a_cushions.wav\"] }",
+                            "src": "${ this.files[\"005b_curtains.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -18957,7 +18964,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -18969,7 +18976,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fTactile06",
+                  "title": "jTactile06",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -19225,7 +19232,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"006a_strawberry.wav\"] }",
+                            "src": "${ this.files[\"006b_nuts.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -19347,17 +19354,17 @@ const study = lab.util.fromObject({
                         "006b_nuts.wav": "embedded\u002F1ceb91542a13ed1ee4a6014c8ead2ed51dfb74ceb72bd4f7b282cc61ad93c269.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile06",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"006b_nuts.wav\"] }",
+                            "src": "${ this.files[\"006a_strawberry.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -19369,7 +19376,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -19381,7 +19388,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jTactile07",
+                  "title": "fTactile07",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -19628,8 +19635,7 @@ const study = lab.util.fromObject({
                         "007b_cheese.wav": "embedded\u002F9ea940603558fcd68aaad3e342e570b88caa09f6bc6791106b0d8966043645ac.wav"
                       },
                       "responses": {
-                        "": "",
-                        "undefined": ""
+                        "": ""
                       },
                       "parameters": {},
                       "messageHandlers": {},
@@ -19639,7 +19645,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"007b_cheese.wav\"] }",
+                            "src": "${ this.files[\"007a_butter.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -19763,17 +19769,17 @@ const study = lab.util.fromObject({
                         "007a_butter.wav": "embedded\u002F6f03947ee49b53e76dc2df8229dead368d92890b9221af89e4a7eb8434ab80bc.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile07",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"007a_butter.wav\"] }",
+                            "src": "${ this.files[\"007b_cheese.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -19785,7 +19791,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -19797,7 +19803,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fTactile08",
+                  "title": "jTactile08",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -20055,7 +20061,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"008a_tomato.wav\"] }",
+                            "src": "${ this.files[\"008b_burdock.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -20179,17 +20185,17 @@ const study = lab.util.fromObject({
                         "008b_burdock.wav": "embedded\u002Fedc7cbe0903dbb9ca2deb3635250711214982e79eb0aaad8903f882d83cf339a.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile08",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"008b_burdock.wav\"] }",
+                            "src": "${ this.files[\"008a_tomato.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -20201,7 +20207,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -20213,7 +20219,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jTactile09",
+                  "title": "fTactile09",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -20473,7 +20479,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"009b_bench.wav\"] }",
+                            "src": "${ this.files[\"009a_sofa.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -20598,17 +20604,17 @@ const study = lab.util.fromObject({
                         "009a_sofa.wav": "embedded\u002Faa0a308393a404070c23302d6c019ab6436fb335532a952ec63b3df767dd60be.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile09",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"009a_sofa.wav\"] }",
+                            "src": "${ this.files[\"009b_bench.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -20620,7 +20626,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -20632,7 +20638,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fTactile10",
+                  "title": "jTactile10",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -20894,7 +20900,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"010a_skin.wav\"] }",
+                            "src": "${ this.files[\"010b_bone.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -21016,21 +21022,21 @@ const study = lab.util.fromObject({
                         "008a_movie.wav": "embedded\u002F25c1c4992791be75a0ffb2a6bcb81d149cdfbf2175d42371d189b4341b902873.wav",
                         "009b_castanets.wav": "embedded\u002Fd6242ff00aee53e0a3f2d7a32e06c2cb341383f50cc8ee6aeb9af7a819ca0876.wav",
                         "010a_dog.wav": "embedded\u002F6e99addd87b3382f93472890d59c2cc15361390ac1887f1fb1fb5f920f9bde77.wav",
-                        "010a_skin.wav": "embedded\u002Fbbc6f7eea4d863c856e90c5fde7d75124577263073ba3275eb259cb2525b06ac.wav",
+                        "010a_skin.wav": "embedded\u002F434481fca71cbafa127eb24edafa6d823518ce76d750e2582bc72a6f91aa24be.wav",
                         "010b_bone.wav": "embedded\u002Fbb182fb2b44dfbc4e5cb071cffb970eb7106857f7511d44173c46309b7fad618.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile10",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"010b_bone.wav\"] }",
+                            "src": "${ this.files[\"010a_skin.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -21042,7 +21048,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -21054,7 +21060,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fTactile12",
+                  "title": "jTactile12",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -21318,7 +21324,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"013a_knife.wav\"] }",
+                            "src": "${ this.files[\"013b_glass.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -21451,12 +21457,12 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile12",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"013b_glass.wav\"] }",
+                            "src": "${ this.files[\"013a_knife.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -21467,8 +21473,7 @@ const study = lab.util.fromObject({
                           "stop": "2000",
                           "priority": 0
                         }
-                      ],
-                      "correctResponse": "f"
+                      ]
                     }
                   ]
                 },
@@ -21480,7 +21485,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jTactile13",
+                  "title": "fTactile13",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -21745,7 +21750,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"014b_brushes.wav\"] }",
+                            "src": "${ this.files[\"014a_scissors.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -21873,17 +21878,17 @@ const study = lab.util.fromObject({
                         "014a_scissors.wav": "embedded\u002Fb6bff05acfe0eaea94473fea5775159886f2a0c2e8a294986fbf44682addf9eb.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile13",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"014a_scissors.wav\"] }",
+                            "src": "${ this.files[\"014b_brushes.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -21895,7 +21900,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -21907,7 +21912,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fTactile14",
+                  "title": "jTactile14",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -22174,7 +22179,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"015a_sand.wav\"] }",
+                            "src": "${ this.files[\"015b_snow.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -22303,17 +22308,17 @@ const study = lab.util.fromObject({
                         "015b_snow.wav": "embedded\u002F19966fc52ee20af0dc1eebee7de0d465ca73ad184338b3814d1e2ffb4e4e2f2d.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile14",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"015b_snow.wav\"] }",
+                            "src": "${ this.files[\"015a_sand.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -22325,7 +22330,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -22337,7 +22342,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jTactile15",
+                  "title": "fTactile15",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -22605,7 +22610,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"016b_ice.wav\"] }",
+                            "src": "${ this.files[\"016a_fire.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -22736,435 +22741,17 @@ const study = lab.util.fromObject({
                         "016a_fire.wav": "embedded\u002F463dbff51419e790c91a57f7fe44bbd1ea2383ec91511fba5d9da2f12435a208.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
-                      },
-                      "parameters": {},
-                      "messageHandlers": {},
-                      "title": "J",
-                      "timeline": [
-                        {
-                          "type": "sound",
-                          "payload": {
-                            "src": "${ this.files[\"016a_fire.wav\"] }",
-                            "loop": false
-                          },
-                          "gain": "",
-                          "pan": "",
-                          "rampUp": "",
-                          "rampDown": "",
-                          "start": 0,
-                          "stop": "2000",
-                          "priority": 0
-                        }
-                      ],
-                      "correctResponse": "j"
-                    }
-                  ]
-                },
-                {
-                  "type": "lab.flow.Sequence",
-                  "files": {},
-                  "responses": {
-                    "": ""
-                  },
-                  "parameters": {},
-                  "messageHandlers": {},
-                  "title": "fTactile 16",
-                  "content": [
-                    {
-                      "type": "lab.canvas.Screen",
-                      "content": [
-                        {
-                          "type": "i-text",
-                          "left": 0,
-                          "top": 0,
-                          "angle": 0,
-                          "width": 228.91,
-                          "height": 72.32,
-                          "stroke": null,
-                          "strokeWidth": 1,
-                          "fill": "#0070d9",
-                          "text": "ready?",
-                          "fontStyle": "normal",
-                          "fontWeight": "bold",
-                          "fontSize": "64",
-                          "fontFamily": "sans-serif",
-                          "lineHeight": 1.16,
-                          "textAlign": "center"
-                        }
-                      ],
-                      "viewport": [
-                        800,
-                        600
-                      ],
-                      "files": {},
-                      "responses": {
-                        "keypress": ""
-                      },
-                      "parameters": {},
-                      "messageHandlers": {},
-                      "title": "ready?"
-                    },
-                    {
-                      "type": "lab.canvas.Screen",
-                      "content": [
-                        {
-                          "type": "i-text",
-                          "left": 0,
-                          "top": 0,
-                          "angle": 0,
-                          "width": 80,
-                          "height": 90.4,
-                          "stroke": null,
-                          "strokeWidth": 1,
-                          "fill": "black",
-                          "text": "＋",
-                          "fontStyle": "normal",
-                          "fontWeight": "normal",
-                          "fontSize": "80",
-                          "fontFamily": "sans-serif",
-                          "lineHeight": 1.16,
-                          "textAlign": "center"
-                        }
-                      ],
-                      "viewport": [
-                        800,
-                        600
-                      ],
-                      "files": {},
-                      "responses": {
-                        "": ""
-                      },
-                      "parameters": {},
-                      "messageHandlers": {},
-                      "title": "fixation",
-                      "timeout": "1500"
-                    },
-                    {
-                      "type": "lab.canvas.Screen",
-                      "content": [
-                        {
-                          "type": "i-text",
-                          "left": 0,
-                          "top": 0,
-                          "angle": 0,
-                          "width": 80,
-                          "height": 90.4,
-                          "stroke": null,
-                          "strokeWidth": 1,
-                          "fill": "black",
-                          "text": "＋",
-                          "fontStyle": "normal",
-                          "fontWeight": "normal",
-                          "fontSize": "80",
-                          "fontFamily": "sans-serif",
-                          "lineHeight": 1.16,
-                          "textAlign": "center"
-                        }
-                      ],
-                      "viewport": [
-                        800,
-                        600
-                      ],
-                      "files": {
-                        "001_Which_is.wav": "embedded\u002F8d16f8201dfddc300f429ea525d182b9bbe80ce60d7613f20e9d5625e569cb93.wav"
-                      },
-                      "responses": {
-                        "": ""
-                      },
-                      "parameters": {},
-                      "messageHandlers": {},
-                      "title": "Which is",
-                      "timeout": "1000",
-                      "timeline": [
-                        {
-                          "type": "sound",
-                          "payload": {
-                            "src": "${ this.files[\"001_Which_is.wav\"] }",
-                            "loop": false
-                          },
-                          "gain": "",
-                          "pan": "",
-                          "rampUp": "",
-                          "rampDown": "",
-                          "start": 0,
-                          "stop": "1000",
-                          "priority": 0
-                        }
-                      ]
-                    },
-                    {
-                      "type": "lab.canvas.Screen",
-                      "content": [
-                        {
-                          "type": "i-text",
-                          "left": 0,
-                          "top": 0,
-                          "angle": 0,
-                          "width": 80,
-                          "height": 90.4,
-                          "stroke": null,
-                          "strokeWidth": 1,
-                          "fill": "black",
-                          "text": "＋",
-                          "fontStyle": "normal",
-                          "fontWeight": "normal",
-                          "fontSize": "80",
-                          "fontFamily": "sans-serif",
-                          "lineHeight": 1.16,
-                          "textAlign": "center"
-                        }
-                      ],
-                      "viewport": [
-                        800,
-                        600
-                      ],
-                      "files": {
-                        "001_Which_is.wav": "embedded\u002F8d16f8201dfddc300f429ea525d182b9bbe80ce60d7613f20e9d5625e569cb93.wav",
-                        "A_0001_brighter.wav": "embedded\u002F053a91f9e14f75e242459ef82ababd7cb66bd2e5ad4fb28b63b5d79601a5104a.wav",
-                        "A_0002_darker.wav": "embedded\u002Fb60977d53e87d85ef6b79f92e050ce80febe427889813cd1abd4938e735f9400.wav",
-                        "A_0003_bluer.wav": "embedded\u002Fe02d305eec65848ad8c4a9c9f6ce92dfcfc6cbaa8efa97d29807884c346feba1.wav",
-                        "A_0004_brower.wav": "embedded\u002F92d74e97014743459e1925885f791276120e36447a0e768a2a56e93aae3a6311.wav",
-                        "A_0005_whiter.wav": "embedded\u002F03b926dc23ab46df9035377e837f069df6c5010ecb1fa950465a630206917714.wav",
-                        "A_0006_greener.wav": "embedded\u002Ff4849bb416a0c2f5720471b020676d9baacd93fd61301d75dbec64c3f3d82311.wav",
-                        "A_0007_redder.wav": "embedded\u002F29ce4686f22a502664ef5f5ae226af231a48be5a64b7fea23d4e2e60d47bfc1c.wav",
-                        "A_0008_grayer.wav": "embedded\u002F511000c134c3d1e16f1213b22f440f3034b0dd7599359274fbb7358703fee9db.wav",
-                        "A_louder.wav": "embedded\u002Ff0c996dfcb2b0117ba3a06401dd5ce8039aa57fa45370938c41c98c587183d0a.wav",
-                        "001b_helmet.wav": "embedded\u002Fadcd4f80f27edd33e6c8428afdebfb6f182cd5024bb9c574117751a41f424663.wav",
-                        "001a_dryer.wav": "embedded\u002F0c2282eeb1df65e3bfcdb641ad0e71063053e088f2b6ca560420b15fec79ee18.wav",
-                        "A_01_scratchier.wav": "embedded\u002Fedb1b26b0f21ee31a82e26a281bd727af505b1439c7a57f767bb7840a910b17e.wav",
-                        "A_01_heavier.wav": "embedded\u002F64786fc8719ff79a04f8e5fa25e9d74de4e6c9a7b76dced7e8b0a057f9ed4960.wav",
-                        "A_02_wobblier.wav": "embedded\u002F1b6412642457571780ab8545038e0863f5bc46a8540cb69eb44311a50166c7d0.wav",
-                        "A_03_harder.wav": "embedded\u002Fa8a183eef31785521968794b8048cb70d5fbf9b298791e1ac44f59fc4fe05162.wav"
-                      },
-                      "responses": {
-                        "": ""
-                      },
-                      "parameters": {},
-                      "messageHandlers": {},
-                      "title": "Adjective",
-                      "timeout": "2000",
-                      "timeline": [
-                        {
-                          "type": "sound",
-                          "payload": {
-                            "src": "${ this.files[\"A_03_harder.wav\"] }",
-                            "loop": false
-                          },
-                          "gain": "",
-                          "pan": "",
-                          "rampUp": "",
-                          "rampDown": "",
-                          "start": 0,
-                          "stop": 2000,
-                          "priority": 0
-                        }
-                      ]
-                    },
-                    {
-                      "type": "lab.canvas.Screen",
-                      "content": [
-                        {
-                          "type": "i-text",
-                          "left": -200,
-                          "top": 0,
-                          "angle": 0,
-                          "width": 45.7,
-                          "height": 90.4,
-                          "stroke": null,
-                          "strokeWidth": 1,
-                          "fill": "black",
-                          "text": "F",
-                          "fontStyle": "normal",
-                          "fontWeight": "normal",
-                          "fontSize": "80",
-                          "fontFamily": "sans-serif",
-                          "lineHeight": 1.16,
-                          "textAlign": "center"
-                        }
-                      ],
-                      "viewport": [
-                        800,
-                        600
-                      ],
-                      "files": {
-                        "001a_Kaminari.wav": "embedded\u002F852e1cd295570601c496cbf6b752eec4367efb7370578ea7d4b7e3d8e24009bf.wav",
-                        "002a_azuki.wav": "embedded\u002Fd76937cddf4ffbbf46ed41c66b80937c96822e52e1698cb0ee4abd34a5df542f.wav",
-                        "003b_shiro.wav": "embedded\u002F16c88f4eccc538c4357a59506791a46466c8b643aa5c58e3fd8060b1c223fbfc.wav",
-                        "003a_Kuro.wav": "embedded\u002F82f0058095ad3e0af153beec9abc4577a16146f4c9a28f1febd6c64be2da85c9.wav",
-                        "004a_nasu.wav": "embedded\u002F6500ad1976f9d1812c3d4e4aad98548a5593b7796fd1ee78ccf3b6795dad9575.wav",
-                        "006a_cocoa.wav": "embedded\u002Fb98877ab7e1de5530472e3acbefef28eb4d8c003c43104fbf8603f2dc9ee7743.wav",
-                        "007a_cola.wav": "embedded\u002F274ae79adcab8618f6cfdc9f798442d1c67eb9d534a0cabe50c0bfbeba8d4e2e.wav",
-                        "008a_karasu.wav": "embedded\u002F8eff050cd12712588f1bf97d0468bd8bb94710dff3d934826c7f17343aba81f9.wav",
-                        "009a_coffee.wav": "embedded\u002Fbc6ecbe6f4d874a70ba08e05b760a6d6eb35bddd88c9a0e2a1bdf9a3247b05ae.wav",
-                        "010a_umi.wav": "embedded\u002Faf674ec14e1c92e33b5364b6b8153eb477e625442f4bce26138cf9984a4db853.wav",
-                        "011a_natto.wav": "embedded\u002F9720f210674fbe296de70bab0e850758ea0d3f03590a930dd9b06f96c2057079.wav",
-                        "005a_sio.wav": "embedded\u002F1e5f1e4389406f0ded3f943c8ccfe9f60e760a697af7d16977c7c107145b0f0f.wav",
-                        "012a_yuki.wav": "embedded\u002F19966fc52ee20af0dc1eebee7de0d465ca73ad184338b3814d1e2ffb4e4e2f2d.wav",
-                        "013a_tomato.wav": "embedded\u002F4d80ecb6511135d7ca8af977a00f4f897781e1b4607423868865410bb8996ae1.wav",
-                        "014a_tire.wav": "embedded\u002F576470a7048e988d369e38430b88663c518c7fd745ad6fd6513e4f6792874978.wav",
-                        "015a_kyuuri.wav": "embedded\u002Fe63fbe41232e4d28512c831f60a7a67741d9c3602b35ec478826680947f75bd6.wav",
-                        "016a_apple.wav": "embedded\u002Fbd4ebed10568f8f6f9c1b0bdb0a17025c354deeffe540794e6308d80cc2c3dda.wav",
-                        "017a_stone.wav": "embedded\u002F83c1cb0f5f6681afb8ce09aaf0253d93094bf9efe2ef10da33251605be733dfe.wav",
-                        "018a_bread.wav": "embedded\u002Fe7cc8f94634ff8392dcbc8e5d1964b637ff34eb2b70a50588bd66af5ae09b5e4.wav",
-                        "019a_choco.wav": "embedded\u002F6f7d1c26c90ed598dcfa5f38ab5be9f120f72eea8ed6cce91ae5bdb6bc6a54b4.wav",
-                        "001a_dryer.wav": "embedded\u002F0c2282eeb1df65e3bfcdb641ad0e71063053e088f2b6ca560420b15fec79ee18.wav",
-                        "001a_brushes.wav": "embedded\u002F5a5cb6dfd61815a511059659dad73259959f203fd9aec6761cebd965cfc7522d.wav",
-                        "001a_jeans.wav": "embedded\u002F120a1390f364c0e7265227be915fa9c01d3f942b3ae4a7a270102325cfc4d468.wav",
-                        "003a_bear.wav": "embedded\u002Fcf4bbbf9964c535ee705758179ade350e0c7e3859ceb77a95fbc0b12ec335e55.wav",
-                        "004b_dolphin.wav": "embedded\u002Fd72e39605f23973b03f01d0182df5ce9de6ae80df00cc137b4058ce4b45348a4.wav",
-                        "005b_taxi.wav": "embedded\u002Fa6e7dbad54e339421931a3f20f644b7640a87c0cd53916543ecb28423107d182.wav",
-                        "005a_truck.wav": "embedded\u002Fe8452c0c948fbff4e4c7295bdb582a48e145bae17401bd0d5f69f7d10f44a961.wav",
-                        "006b_merrygoland.wav": "embedded\u002F6581df7196b0d5ddac384a51892badfd46f915ebe4657afc6ecd889056a8e022.wav",
-                        "006a_sesaw.wav": "embedded\u002F52669a65dc7f6c169d7c70a1d8dbb50ae8af1b596c859c3add20ad6f2d941254.wav",
-                        "017a_nails_.wav": "embedded\u002Fae4b5aaaddbc1d6fbf1301f41f5f81e2e9630ea6dba3bbb9b681b7446ecef45d.wav"
-                      },
-                      "responses": {
-                        "": ""
-                      },
-                      "parameters": {},
-                      "messageHandlers": {},
-                      "title": "F",
-                      "timeout": "2000",
-                      "timeline": [
-                        {
-                          "type": "sound",
-                          "payload": {
-                            "src": "${ this.files[\"017a_nails_.wav\"] }",
-                            "loop": false
-                          },
-                          "gain": "",
-                          "pan": "",
-                          "rampUp": "",
-                          "rampDown": "",
-                          "start": 0,
-                          "stop": "2000",
-                          "priority": 0
-                        }
-                      ]
-                    },
-                    {
-                      "type": "lab.canvas.Screen",
-                      "content": [
-                        {
-                          "type": "i-text",
-                          "left": 0,
-                          "top": 0,
-                          "angle": 0,
-                          "width": 80,
-                          "height": 90.4,
-                          "stroke": null,
-                          "strokeWidth": 1,
-                          "fill": "black",
-                          "text": "＋",
-                          "fontStyle": "normal",
-                          "fontWeight": "normal",
-                          "fontSize": "80",
-                          "fontFamily": "sans-serif",
-                          "lineHeight": 1.16,
-                          "textAlign": "center"
-                        }
-                      ],
-                      "viewport": [
-                        800,
-                        600
-                      ],
-                      "files": {
-                        "001_Which_is.wav": "embedded\u002F8d16f8201dfddc300f429ea525d182b9bbe80ce60d7613f20e9d5625e569cb93.wav",
-                        "002_or.wav": "embedded\u002Fc8e0b03bcd14c3f460f00caf13fccbf15a209164edc20638224b4a3509a30c0a.wav"
-                      },
-                      "responses": {
-                        "": ""
-                      },
-                      "parameters": {},
-                      "messageHandlers": {},
-                      "title": "or",
-                      "timeout": "1000",
-                      "timeline": [
-                        {
-                          "type": "sound",
-                          "payload": {
-                            "src": "${ this.files[\"002_or.wav\"] }",
-                            "loop": false
-                          },
-                          "gain": "",
-                          "pan": "",
-                          "rampUp": "",
-                          "rampDown": "",
-                          "start": 0,
-                          "stop": "1000",
-                          "priority": 0
-                        }
-                      ]
-                    },
-                    {
-                      "type": "lab.canvas.Screen",
-                      "content": [
-                        {
-                          "type": "i-text",
-                          "left": 200,
-                          "top": 0,
-                          "angle": 0,
-                          "width": 35.55,
-                          "height": 90.4,
-                          "stroke": null,
-                          "strokeWidth": 1,
-                          "fill": "black",
-                          "text": "J",
-                          "fontStyle": "normal",
-                          "fontWeight": "normal",
-                          "fontSize": "80",
-                          "fontFamily": "sans-serif",
-                          "lineHeight": 1.16,
-                          "textAlign": "center"
-                        }
-                      ],
-                      "viewport": [
-                        800,
-                        600
-                      ],
-                      "files": {
-                        "001b_Ooame.wav": "embedded\u002F8f2104ea876890a2904c54073d12fe98c324f00da935735395a2777b47687978.wav",
-                        "002b_tamago.wav": "embedded\u002F56d939a6f685d7569101e315812e741f915ca3252e1884e21a4d63aa928be0a6.wav",
-                        "003b_shiro.wav": "embedded\u002F16c88f4eccc538c4357a59506791a46466c8b643aa5c58e3fd8060b1c223fbfc.wav",
-                        "004b_negi.wav": "embedded\u002F6500ad1976f9d1812c3d4e4aad98548a5593b7796fd1ee78ccf3b6795dad9575.wav",
-                        "006b_sugar.wav": "embedded\u002Ffc57d96eb8bec34ded1baa3618525d7f44e60d0e2c3524c6cc4e82282380452c.wav",
-                        "007b_milk.wav": "embedded\u002F757b8917a43f796224006ee5069cf00b20ee75a44f62e074f941f30b7665756f.wav",
-                        "008b_kamome.wav": "embedded\u002F2034bf2c52c3790d199979de0d60ed5cbf72ec0dc497aef1207498bb218b78bf.wav",
-                        "009b_milk.wav": "embedded\u002F757b8917a43f796224006ee5069cf00b20ee75a44f62e074f941f30b7665756f.wav",
-                        "010b_tsuki.wav": "embedded\u002F5797c6b75efbf9c49e64d34c560e24451287dbdbba83bc44d0f558cb0ee009eb.wav",
-                        "011b_tarako.wav": "embedded\u002Fb7d98c7d45c9e8daeb057d0772a08b2841426e1fb6211e3fe97d714512333fa4.wav",
-                        "012b_doro.wav": "embedded\u002F30856da750b82d3847d1c5799a223cfac903d67733e3a184f7354e55bb2f230a.wav",
-                        "013b_daizu.wav": "embedded\u002Feb8c6df8b75556b602bf893d474866ba5802c26fdf3371d2e22dac43f5e73782.wav",
-                        "014b_garasu.wav": "embedded\u002Fe2fd2df105ef947d6bed31b742df76c7ca599ac517e70fa96689b67692e01384.wav",
-                        "015b_ninzin.wav": "embedded\u002F87b87944f3be3046da3e27d0a00822a4f302b4bfa8ddc350c4768f6f2b216168.wav",
-                        "016b_grape.wav": "embedded\u002Fb41cacc9e9c055616011c4198bd129a5a8fab6d348243cd3a16dba0f2c192617.wav",
-                        "017b_tsuchi.wav": "embedded\u002Fb3979d4b2f656cb6786b506e692bae500e3ac9df35c2fb0d3d225892053e8fbd.wav",
-                        "018b_kome.wav": "embedded\u002F65e093598fad6cfb5b664e86b4b7896ce4bb663d57dd89549008736c8f690fa5.wav",
-                        "019b_vanilla.wav": "embedded\u002F4c9baaf26e628bc86fd6b9a74346fd55d9a89208f13bfc0bdc37587c3ae22d82.wav",
-                        "001b_helmet.wav": "embedded\u002Fadcd4f80f27edd33e6c8428afdebfb6f182cd5024bb9c574117751a41f424663.wav",
-                        "001b_pajamas.wav": "embedded\u002F6c855a7491d9242b2def71799a46d9fa89607494182d59d32bd77c4505b69e66.wav",
-                        "003b_dog.wav": "embedded\u002F6e99addd87b3382f93472890d59c2cc15361390ac1887f1fb1fb5f920f9bde77.wav",
-                        "004a_wheel.wav": "embedded\u002Face3446f3d4417fd33002481fbd95e65c694440cd9e8615397152b5a7361283b.wav",
-                        "005a_truck.wav": "embedded\u002Fe8452c0c948fbff4e4c7295bdb582a48e145bae17401bd0d5f69f7d10f44a961.wav",
-                        "005b_taxi.wav": "embedded\u002Fa6e7dbad54e339421931a3f20f644b7640a87c0cd53916543ecb28423107d182.wav",
-                        "006a_sesaw.wav": "embedded\u002F52669a65dc7f6c169d7c70a1d8dbb50ae8af1b596c859c3add20ad6f2d941254.wav",
-                        "006b_merrygoland.wav": "embedded\u002F6581df7196b0d5ddac384a51892badfd46f915ebe4657afc6ecd889056a8e022.wav",
-                        "017b_hifu_.wav": "embedded\u002F434481fca71cbafa127eb24edafa6d823518ce76d750e2582bc72a6f91aa24be.wav"
-                      },
-                      "responses": {
                         "keypress(f)": "correct",
                         "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile15",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"017b_hifu_.wav\"] }",
+                            "src": "${ this.files[\"016b_ice.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -23188,7 +22775,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jTactile 17",
+                  "title": "jTactile 16",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -23437,7 +23024,7 @@ const study = lab.util.fromObject({
                         "006b_merrygoland.wav": "embedded\u002F6581df7196b0d5ddac384a51892badfd46f915ebe4657afc6ecd889056a8e022.wav",
                         "006a_sesaw.wav": "embedded\u002F52669a65dc7f6c169d7c70a1d8dbb50ae8af1b596c859c3add20ad6f2d941254.wav",
                         "017a_nails_.wav": "embedded\u002Fae4b5aaaddbc1d6fbf1301f41f5f81e2e9630ea6dba3bbb9b681b7446ecef45d.wav",
-                        "018b_thread_.wav": "embedded\u002F9783947d9d5e46793aa780fa79e66888e65bc7da5b0ffc400725733001c99c8d.wav"
+                        "017b_hifu_.wav": "embedded\u002F434481fca71cbafa127eb24edafa6d823518ce76d750e2582bc72a6f91aa24be.wav"
                       },
                       "responses": {
                         "": ""
@@ -23450,7 +23037,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"018b_thread_.wav\"] }",
+                            "src": "${ this.files[\"017b_hifu_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -23571,15 +23158,302 @@ const study = lab.util.fromObject({
                         "006a_sesaw.wav": "embedded\u002F52669a65dc7f6c169d7c70a1d8dbb50ae8af1b596c859c3add20ad6f2d941254.wav",
                         "006b_merrygoland.wav": "embedded\u002F6581df7196b0d5ddac384a51892badfd46f915ebe4657afc6ecd889056a8e022.wav",
                         "017b_hifu_.wav": "embedded\u002F434481fca71cbafa127eb24edafa6d823518ce76d750e2582bc72a6f91aa24be.wav",
-                        "018a_needles_.wav": "embedded\u002Ffdb1999076d8b98acd1ddaaff50f6fe1d5f4bb9567fe4667233fef70f1ed5db5.wav"
+                        "017a_nails_.wav": "embedded\u002Fae4b5aaaddbc1d6fbf1301f41f5f81e2e9630ea6dba3bbb9b681b7446ecef45d.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile16",
+                      "timeline": [
+                        {
+                          "type": "sound",
+                          "payload": {
+                            "src": "${ this.files[\"017a_nails_.wav\"] }",
+                            "loop": false
+                          },
+                          "gain": "",
+                          "pan": "",
+                          "rampUp": "",
+                          "rampDown": "",
+                          "start": 0,
+                          "stop": "2000",
+                          "priority": 0
+                        }
+                      ],
+                      "correctResponse": "j"
+                    }
+                  ]
+                },
+                {
+                  "type": "lab.flow.Sequence",
+                  "files": {},
+                  "responses": {
+                    "": ""
+                  },
+                  "parameters": {},
+                  "messageHandlers": {},
+                  "title": "fTactile 17",
+                  "content": [
+                    {
+                      "type": "lab.canvas.Screen",
+                      "content": [
+                        {
+                          "type": "i-text",
+                          "left": 0,
+                          "top": 0,
+                          "angle": 0,
+                          "width": 228.91,
+                          "height": 72.32,
+                          "stroke": null,
+                          "strokeWidth": 1,
+                          "fill": "#0070d9",
+                          "text": "ready?",
+                          "fontStyle": "normal",
+                          "fontWeight": "bold",
+                          "fontSize": "64",
+                          "fontFamily": "sans-serif",
+                          "lineHeight": 1.16,
+                          "textAlign": "center"
+                        }
+                      ],
+                      "viewport": [
+                        800,
+                        600
+                      ],
+                      "files": {},
+                      "responses": {
+                        "keypress": ""
+                      },
+                      "parameters": {},
+                      "messageHandlers": {},
+                      "title": "ready?"
+                    },
+                    {
+                      "type": "lab.canvas.Screen",
+                      "content": [
+                        {
+                          "type": "i-text",
+                          "left": 0,
+                          "top": 0,
+                          "angle": 0,
+                          "width": 80,
+                          "height": 90.4,
+                          "stroke": null,
+                          "strokeWidth": 1,
+                          "fill": "black",
+                          "text": "＋",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                          "fontSize": "80",
+                          "fontFamily": "sans-serif",
+                          "lineHeight": 1.16,
+                          "textAlign": "center"
+                        }
+                      ],
+                      "viewport": [
+                        800,
+                        600
+                      ],
+                      "files": {},
+                      "responses": {
+                        "": ""
+                      },
+                      "parameters": {},
+                      "messageHandlers": {},
+                      "title": "fixation",
+                      "timeout": "1500"
+                    },
+                    {
+                      "type": "lab.canvas.Screen",
+                      "content": [
+                        {
+                          "type": "i-text",
+                          "left": 0,
+                          "top": 0,
+                          "angle": 0,
+                          "width": 80,
+                          "height": 90.4,
+                          "stroke": null,
+                          "strokeWidth": 1,
+                          "fill": "black",
+                          "text": "＋",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                          "fontSize": "80",
+                          "fontFamily": "sans-serif",
+                          "lineHeight": 1.16,
+                          "textAlign": "center"
+                        }
+                      ],
+                      "viewport": [
+                        800,
+                        600
+                      ],
+                      "files": {
+                        "001_Which_is.wav": "embedded\u002F8d16f8201dfddc300f429ea525d182b9bbe80ce60d7613f20e9d5625e569cb93.wav"
+                      },
+                      "responses": {
+                        "": ""
+                      },
+                      "parameters": {},
+                      "messageHandlers": {},
+                      "title": "Which is",
+                      "timeout": "1000",
+                      "timeline": [
+                        {
+                          "type": "sound",
+                          "payload": {
+                            "src": "${ this.files[\"001_Which_is.wav\"] }",
+                            "loop": false
+                          },
+                          "gain": "",
+                          "pan": "",
+                          "rampUp": "",
+                          "rampDown": "",
+                          "start": 0,
+                          "stop": "1000",
+                          "priority": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "lab.canvas.Screen",
+                      "content": [
+                        {
+                          "type": "i-text",
+                          "left": 0,
+                          "top": 0,
+                          "angle": 0,
+                          "width": 80,
+                          "height": 90.4,
+                          "stroke": null,
+                          "strokeWidth": 1,
+                          "fill": "black",
+                          "text": "＋",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                          "fontSize": "80",
+                          "fontFamily": "sans-serif",
+                          "lineHeight": 1.16,
+                          "textAlign": "center"
+                        }
+                      ],
+                      "viewport": [
+                        800,
+                        600
+                      ],
+                      "files": {
+                        "001_Which_is.wav": "embedded\u002F8d16f8201dfddc300f429ea525d182b9bbe80ce60d7613f20e9d5625e569cb93.wav",
+                        "A_0001_brighter.wav": "embedded\u002F053a91f9e14f75e242459ef82ababd7cb66bd2e5ad4fb28b63b5d79601a5104a.wav",
+                        "A_0002_darker.wav": "embedded\u002Fb60977d53e87d85ef6b79f92e050ce80febe427889813cd1abd4938e735f9400.wav",
+                        "A_0003_bluer.wav": "embedded\u002Fe02d305eec65848ad8c4a9c9f6ce92dfcfc6cbaa8efa97d29807884c346feba1.wav",
+                        "A_0004_brower.wav": "embedded\u002F92d74e97014743459e1925885f791276120e36447a0e768a2a56e93aae3a6311.wav",
+                        "A_0005_whiter.wav": "embedded\u002F03b926dc23ab46df9035377e837f069df6c5010ecb1fa950465a630206917714.wav",
+                        "A_0006_greener.wav": "embedded\u002Ff4849bb416a0c2f5720471b020676d9baacd93fd61301d75dbec64c3f3d82311.wav",
+                        "A_0007_redder.wav": "embedded\u002F29ce4686f22a502664ef5f5ae226af231a48be5a64b7fea23d4e2e60d47bfc1c.wav",
+                        "A_0008_grayer.wav": "embedded\u002F511000c134c3d1e16f1213b22f440f3034b0dd7599359274fbb7358703fee9db.wav",
+                        "A_louder.wav": "embedded\u002Ff0c996dfcb2b0117ba3a06401dd5ce8039aa57fa45370938c41c98c587183d0a.wav",
+                        "001b_helmet.wav": "embedded\u002Fadcd4f80f27edd33e6c8428afdebfb6f182cd5024bb9c574117751a41f424663.wav",
+                        "001a_dryer.wav": "embedded\u002F0c2282eeb1df65e3bfcdb641ad0e71063053e088f2b6ca560420b15fec79ee18.wav",
+                        "A_01_scratchier.wav": "embedded\u002Fedb1b26b0f21ee31a82e26a281bd727af505b1439c7a57f767bb7840a910b17e.wav",
+                        "A_01_heavier.wav": "embedded\u002F64786fc8719ff79a04f8e5fa25e9d74de4e6c9a7b76dced7e8b0a057f9ed4960.wav",
+                        "A_02_wobblier.wav": "embedded\u002F1b6412642457571780ab8545038e0863f5bc46a8540cb69eb44311a50166c7d0.wav",
+                        "A_03_harder.wav": "embedded\u002Fa8a183eef31785521968794b8048cb70d5fbf9b298791e1ac44f59fc4fe05162.wav"
+                      },
+                      "responses": {
+                        "": ""
+                      },
+                      "parameters": {},
+                      "messageHandlers": {},
+                      "title": "Adjective",
+                      "timeout": "2000",
+                      "timeline": [
+                        {
+                          "type": "sound",
+                          "payload": {
+                            "src": "${ this.files[\"A_03_harder.wav\"] }",
+                            "loop": false
+                          },
+                          "gain": "",
+                          "pan": "",
+                          "rampUp": "",
+                          "rampDown": "",
+                          "start": 0,
+                          "stop": 2000,
+                          "priority": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "lab.canvas.Screen",
+                      "content": [
+                        {
+                          "type": "i-text",
+                          "left": -200,
+                          "top": 0,
+                          "angle": 0,
+                          "width": 45.7,
+                          "height": 90.4,
+                          "stroke": null,
+                          "strokeWidth": 1,
+                          "fill": "black",
+                          "text": "F",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                          "fontSize": "80",
+                          "fontFamily": "sans-serif",
+                          "lineHeight": 1.16,
+                          "textAlign": "center"
+                        }
+                      ],
+                      "viewport": [
+                        800,
+                        600
+                      ],
+                      "files": {
+                        "001a_Kaminari.wav": "embedded\u002F852e1cd295570601c496cbf6b752eec4367efb7370578ea7d4b7e3d8e24009bf.wav",
+                        "002a_azuki.wav": "embedded\u002Fd76937cddf4ffbbf46ed41c66b80937c96822e52e1698cb0ee4abd34a5df542f.wav",
+                        "003b_shiro.wav": "embedded\u002F16c88f4eccc538c4357a59506791a46466c8b643aa5c58e3fd8060b1c223fbfc.wav",
+                        "003a_Kuro.wav": "embedded\u002F82f0058095ad3e0af153beec9abc4577a16146f4c9a28f1febd6c64be2da85c9.wav",
+                        "004a_nasu.wav": "embedded\u002F6500ad1976f9d1812c3d4e4aad98548a5593b7796fd1ee78ccf3b6795dad9575.wav",
+                        "006a_cocoa.wav": "embedded\u002Fb98877ab7e1de5530472e3acbefef28eb4d8c003c43104fbf8603f2dc9ee7743.wav",
+                        "007a_cola.wav": "embedded\u002F274ae79adcab8618f6cfdc9f798442d1c67eb9d534a0cabe50c0bfbeba8d4e2e.wav",
+                        "008a_karasu.wav": "embedded\u002F8eff050cd12712588f1bf97d0468bd8bb94710dff3d934826c7f17343aba81f9.wav",
+                        "009a_coffee.wav": "embedded\u002Fbc6ecbe6f4d874a70ba08e05b760a6d6eb35bddd88c9a0e2a1bdf9a3247b05ae.wav",
+                        "010a_umi.wav": "embedded\u002Faf674ec14e1c92e33b5364b6b8153eb477e625442f4bce26138cf9984a4db853.wav",
+                        "011a_natto.wav": "embedded\u002F9720f210674fbe296de70bab0e850758ea0d3f03590a930dd9b06f96c2057079.wav",
+                        "005a_sio.wav": "embedded\u002F1e5f1e4389406f0ded3f943c8ccfe9f60e760a697af7d16977c7c107145b0f0f.wav",
+                        "012a_yuki.wav": "embedded\u002F19966fc52ee20af0dc1eebee7de0d465ca73ad184338b3814d1e2ffb4e4e2f2d.wav",
+                        "013a_tomato.wav": "embedded\u002F4d80ecb6511135d7ca8af977a00f4f897781e1b4607423868865410bb8996ae1.wav",
+                        "014a_tire.wav": "embedded\u002F576470a7048e988d369e38430b88663c518c7fd745ad6fd6513e4f6792874978.wav",
+                        "015a_kyuuri.wav": "embedded\u002Fe63fbe41232e4d28512c831f60a7a67741d9c3602b35ec478826680947f75bd6.wav",
+                        "016a_apple.wav": "embedded\u002Fbd4ebed10568f8f6f9c1b0bdb0a17025c354deeffe540794e6308d80cc2c3dda.wav",
+                        "017a_stone.wav": "embedded\u002F83c1cb0f5f6681afb8ce09aaf0253d93094bf9efe2ef10da33251605be733dfe.wav",
+                        "018a_bread.wav": "embedded\u002Fe7cc8f94634ff8392dcbc8e5d1964b637ff34eb2b70a50588bd66af5ae09b5e4.wav",
+                        "019a_choco.wav": "embedded\u002F6f7d1c26c90ed598dcfa5f38ab5be9f120f72eea8ed6cce91ae5bdb6bc6a54b4.wav",
+                        "001a_dryer.wav": "embedded\u002F0c2282eeb1df65e3bfcdb641ad0e71063053e088f2b6ca560420b15fec79ee18.wav",
+                        "001a_brushes.wav": "embedded\u002F5a5cb6dfd61815a511059659dad73259959f203fd9aec6761cebd965cfc7522d.wav",
+                        "001a_jeans.wav": "embedded\u002F120a1390f364c0e7265227be915fa9c01d3f942b3ae4a7a270102325cfc4d468.wav",
+                        "003a_bear.wav": "embedded\u002Fcf4bbbf9964c535ee705758179ade350e0c7e3859ceb77a95fbc0b12ec335e55.wav",
+                        "004b_dolphin.wav": "embedded\u002Fd72e39605f23973b03f01d0182df5ce9de6ae80df00cc137b4058ce4b45348a4.wav",
+                        "005b_taxi.wav": "embedded\u002Fa6e7dbad54e339421931a3f20f644b7640a87c0cd53916543ecb28423107d182.wav",
+                        "005a_truck.wav": "embedded\u002Fe8452c0c948fbff4e4c7295bdb582a48e145bae17401bd0d5f69f7d10f44a961.wav",
+                        "006b_merrygoland.wav": "embedded\u002F6581df7196b0d5ddac384a51892badfd46f915ebe4657afc6ecd889056a8e022.wav",
+                        "006a_sesaw.wav": "embedded\u002F52669a65dc7f6c169d7c70a1d8dbb50ae8af1b596c859c3add20ad6f2d941254.wav",
+                        "017a_nails_.wav": "embedded\u002Fae4b5aaaddbc1d6fbf1301f41f5f81e2e9630ea6dba3bbb9b681b7446ecef45d.wav",
+                        "018b_thread_.wav": "embedded\u002F9783947d9d5e46793aa780fa79e66888e65bc7da5b0ffc400725733001c99c8d.wav",
+                        "018a_needles_.wav": "embedded\u002Ffdb1999076d8b98acd1ddaaff50f6fe1d5f4bb9567fe4667233fef70f1ed5db5.wav"
+                      },
+                      "responses": {
+                        "": ""
+                      },
+                      "parameters": {},
+                      "messageHandlers": {},
+                      "title": "F",
+                      "timeout": "2000",
                       "timeline": [
                         {
                           "type": "sound",
@@ -23595,8 +23469,143 @@ const study = lab.util.fromObject({
                           "stop": "2000",
                           "priority": 0
                         }
+                      ]
+                    },
+                    {
+                      "type": "lab.canvas.Screen",
+                      "content": [
+                        {
+                          "type": "i-text",
+                          "left": 0,
+                          "top": 0,
+                          "angle": 0,
+                          "width": 80,
+                          "height": 90.4,
+                          "stroke": null,
+                          "strokeWidth": 1,
+                          "fill": "black",
+                          "text": "＋",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                          "fontSize": "80",
+                          "fontFamily": "sans-serif",
+                          "lineHeight": 1.16,
+                          "textAlign": "center"
+                        }
                       ],
-                      "correctResponse": "f"
+                      "viewport": [
+                        800,
+                        600
+                      ],
+                      "files": {
+                        "001_Which_is.wav": "embedded\u002F8d16f8201dfddc300f429ea525d182b9bbe80ce60d7613f20e9d5625e569cb93.wav",
+                        "002_or.wav": "embedded\u002Fc8e0b03bcd14c3f460f00caf13fccbf15a209164edc20638224b4a3509a30c0a.wav"
+                      },
+                      "responses": {
+                        "": ""
+                      },
+                      "parameters": {},
+                      "messageHandlers": {},
+                      "title": "or",
+                      "timeout": "1000",
+                      "timeline": [
+                        {
+                          "type": "sound",
+                          "payload": {
+                            "src": "${ this.files[\"002_or.wav\"] }",
+                            "loop": false
+                          },
+                          "gain": "",
+                          "pan": "",
+                          "rampUp": "",
+                          "rampDown": "",
+                          "start": 0,
+                          "stop": "1000",
+                          "priority": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "lab.canvas.Screen",
+                      "content": [
+                        {
+                          "type": "i-text",
+                          "left": 200,
+                          "top": 0,
+                          "angle": 0,
+                          "width": 35.55,
+                          "height": 90.4,
+                          "stroke": null,
+                          "strokeWidth": 1,
+                          "fill": "black",
+                          "text": "J",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                          "fontSize": "80",
+                          "fontFamily": "sans-serif",
+                          "lineHeight": 1.16,
+                          "textAlign": "center"
+                        }
+                      ],
+                      "viewport": [
+                        800,
+                        600
+                      ],
+                      "files": {
+                        "001b_Ooame.wav": "embedded\u002F8f2104ea876890a2904c54073d12fe98c324f00da935735395a2777b47687978.wav",
+                        "002b_tamago.wav": "embedded\u002F56d939a6f685d7569101e315812e741f915ca3252e1884e21a4d63aa928be0a6.wav",
+                        "003b_shiro.wav": "embedded\u002F16c88f4eccc538c4357a59506791a46466c8b643aa5c58e3fd8060b1c223fbfc.wav",
+                        "004b_negi.wav": "embedded\u002F6500ad1976f9d1812c3d4e4aad98548a5593b7796fd1ee78ccf3b6795dad9575.wav",
+                        "006b_sugar.wav": "embedded\u002Ffc57d96eb8bec34ded1baa3618525d7f44e60d0e2c3524c6cc4e82282380452c.wav",
+                        "007b_milk.wav": "embedded\u002F757b8917a43f796224006ee5069cf00b20ee75a44f62e074f941f30b7665756f.wav",
+                        "008b_kamome.wav": "embedded\u002F2034bf2c52c3790d199979de0d60ed5cbf72ec0dc497aef1207498bb218b78bf.wav",
+                        "009b_milk.wav": "embedded\u002F757b8917a43f796224006ee5069cf00b20ee75a44f62e074f941f30b7665756f.wav",
+                        "010b_tsuki.wav": "embedded\u002F5797c6b75efbf9c49e64d34c560e24451287dbdbba83bc44d0f558cb0ee009eb.wav",
+                        "011b_tarako.wav": "embedded\u002Fb7d98c7d45c9e8daeb057d0772a08b2841426e1fb6211e3fe97d714512333fa4.wav",
+                        "012b_doro.wav": "embedded\u002F30856da750b82d3847d1c5799a223cfac903d67733e3a184f7354e55bb2f230a.wav",
+                        "013b_daizu.wav": "embedded\u002Feb8c6df8b75556b602bf893d474866ba5802c26fdf3371d2e22dac43f5e73782.wav",
+                        "014b_garasu.wav": "embedded\u002Fe2fd2df105ef947d6bed31b742df76c7ca599ac517e70fa96689b67692e01384.wav",
+                        "015b_ninzin.wav": "embedded\u002F87b87944f3be3046da3e27d0a00822a4f302b4bfa8ddc350c4768f6f2b216168.wav",
+                        "016b_grape.wav": "embedded\u002Fb41cacc9e9c055616011c4198bd129a5a8fab6d348243cd3a16dba0f2c192617.wav",
+                        "017b_tsuchi.wav": "embedded\u002Fb3979d4b2f656cb6786b506e692bae500e3ac9df35c2fb0d3d225892053e8fbd.wav",
+                        "018b_kome.wav": "embedded\u002F65e093598fad6cfb5b664e86b4b7896ce4bb663d57dd89549008736c8f690fa5.wav",
+                        "019b_vanilla.wav": "embedded\u002F4c9baaf26e628bc86fd6b9a74346fd55d9a89208f13bfc0bdc37587c3ae22d82.wav",
+                        "001b_helmet.wav": "embedded\u002Fadcd4f80f27edd33e6c8428afdebfb6f182cd5024bb9c574117751a41f424663.wav",
+                        "001b_pajamas.wav": "embedded\u002F6c855a7491d9242b2def71799a46d9fa89607494182d59d32bd77c4505b69e66.wav",
+                        "003b_dog.wav": "embedded\u002F6e99addd87b3382f93472890d59c2cc15361390ac1887f1fb1fb5f920f9bde77.wav",
+                        "004a_wheel.wav": "embedded\u002Face3446f3d4417fd33002481fbd95e65c694440cd9e8615397152b5a7361283b.wav",
+                        "005a_truck.wav": "embedded\u002Fe8452c0c948fbff4e4c7295bdb582a48e145bae17401bd0d5f69f7d10f44a961.wav",
+                        "005b_taxi.wav": "embedded\u002Fa6e7dbad54e339421931a3f20f644b7640a87c0cd53916543ecb28423107d182.wav",
+                        "006a_sesaw.wav": "embedded\u002F52669a65dc7f6c169d7c70a1d8dbb50ae8af1b596c859c3add20ad6f2d941254.wav",
+                        "006b_merrygoland.wav": "embedded\u002F6581df7196b0d5ddac384a51892badfd46f915ebe4657afc6ecd889056a8e022.wav",
+                        "017b_hifu_.wav": "embedded\u002F434481fca71cbafa127eb24edafa6d823518ce76d750e2582bc72a6f91aa24be.wav",
+                        "018a_needles_.wav": "embedded\u002Ffdb1999076d8b98acd1ddaaff50f6fe1d5f4bb9567fe4667233fef70f1ed5db5.wav",
+                        "018b_thread_.wav": "embedded\u002F9783947d9d5e46793aa780fa79e66888e65bc7da5b0ffc400725733001c99c8d.wav"
+                      },
+                      "responses": {
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
+                      },
+                      "parameters": {},
+                      "messageHandlers": {},
+                      "title": "Tactile17",
+                      "timeline": [
+                        {
+                          "type": "sound",
+                          "payload": {
+                            "src": "${ this.files[\"018b_thread_.wav\"] }",
+                            "loop": false
+                          },
+                          "gain": "",
+                          "pan": "",
+                          "rampUp": "",
+                          "rampDown": "",
+                          "start": 0,
+                          "stop": "2000",
+                          "priority": 0
+                        }
+                      ],
+                      "correctResponse": "j"
                     }
                   ]
                 }
@@ -23646,7 +23655,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jInternal 01",
+                  "title": "fInternal 01",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -23899,7 +23908,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"001b_pajamas.wav\"] }",
+                            "src": "${ this.files[\"001a_jeans.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -24016,17 +24025,17 @@ const study = lab.util.fromObject({
                         "001a_jeans.wav": "embedded\u002F120a1390f364c0e7265227be915fa9c01d3f942b3ae4a7a270102325cfc4d468.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal01",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"001a_jeans.wav\"] }",
+                            "src": "${ this.files[\"001b_pajamas.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -24038,7 +24047,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -24050,7 +24059,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fInternal 02",
+                  "title": "jInternal 02",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -24304,7 +24313,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"002a_miso.wav\"] }",
+                            "src": "${ this.files[\"002b_sio.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -24422,17 +24431,17 @@ const study = lab.util.fromObject({
                         "002b_sio.wav": "embedded\u002F1e5f1e4389406f0ded3f943c8ccfe9f60e760a697af7d16977c7c107145b0f0f.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal02",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"002b_sio.wav\"] }",
+                            "src": "${ this.files[\"002a_miso.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -24444,7 +24453,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -24456,7 +24465,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jInternal 03",
+                  "title": "fInternal 03",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -24710,7 +24719,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"003b_dog.wav\"] }",
+                            "src": "${ this.files[\"003a_bear.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -24828,17 +24837,17 @@ const study = lab.util.fromObject({
                         "003a_bear.wav": "embedded\u002Fcf4bbbf9964c535ee705758179ade350e0c7e3859ceb77a95fbc0b12ec335e55.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal03",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"003a_bear.wav\"] }",
+                            "src": "${ this.files[\"003b_dog.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -24850,7 +24859,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -24862,7 +24871,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fInternal 04",
+                  "title": "jInternal 04",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -25117,7 +25126,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"004a_wheel.wav\"] }",
+                            "src": "${ this.files[\"004b_dolphin.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -25236,17 +25245,17 @@ const study = lab.util.fromObject({
                         "004b_dolphin.wav": "embedded\u002Fd72e39605f23973b03f01d0182df5ce9de6ae80df00cc137b4058ce4b45348a4.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal04",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"004b_dolphin.wav\"] }",
+                            "src": "${ this.files[\"004a_wheel.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -25258,7 +25267,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -25270,7 +25279,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jInternal 05",
+                  "title": "fInternal 05",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -25526,7 +25535,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"005b_taxi.wav\"] }",
+                            "src": "${ this.files[\"005a_truck.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -25646,17 +25655,17 @@ const study = lab.util.fromObject({
                         "005b_taxi.wav": "embedded\u002Fa6e7dbad54e339421931a3f20f644b7640a87c0cd53916543ecb28423107d182.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal05",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"005a_truck.wav\"] }",
+                            "src": "${ this.files[\"005b_taxi.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -25668,7 +25677,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -25680,7 +25689,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fInternal 06",
+                  "title": "jInternal 06",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -25939,7 +25948,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"006a_sesaw.wav\"] }",
+                            "src": "${ this.files[\"006b_merrygoland.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -26061,17 +26070,17 @@ const study = lab.util.fromObject({
                         "006b_merrygoland.wav": "embedded\u002F6581df7196b0d5ddac384a51892badfd46f915ebe4657afc6ecd889056a8e022.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal06",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"006b_merrygoland.wav\"] }",
+                            "src": "${ this.files[\"006a_sesaw.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -26083,7 +26092,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -26095,7 +26104,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jInternal 07",
+                  "title": "fInternal 07",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -26345,7 +26354,8 @@ const study = lab.util.fromObject({
                         "006b_merrygoland.wav": "embedded\u002F6581df7196b0d5ddac384a51892badfd46f915ebe4657afc6ecd889056a8e022.wav",
                         "007a_needles.wav": "embedded\u002Ffdb1999076d8b98acd1ddaaff50f6fe1d5f4bb9567fe4667233fef70f1ed5db5.wav",
                         "007b_thread.wav": "embedded\u002F9783947d9d5e46793aa780fa79e66888e65bc7da5b0ffc400725733001c99c8d.wav",
-                        "011b_yuka_.wav": "embedded\u002F48c45477f27877233bbcdadf632bb75f8713fbdf65b9c708c76e39dbbb76171b.wav"
+                        "011b_yuka_.wav": "embedded\u002F48c45477f27877233bbcdadf632bb75f8713fbdf65b9c708c76e39dbbb76171b.wav",
+                        "011a_yane_.wav": "embedded\u002F0ff7b41881621277e258f17929634535a113847887ffce81cb941e58238bb242.wav"
                       },
                       "responses": {
                         "": ""
@@ -26358,7 +26368,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"011b_yuka_.wav\"] }",
+                            "src": "${ this.files[\"011a_yane_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -26479,20 +26489,21 @@ const study = lab.util.fromObject({
                         "006a_sesaw.wav": "embedded\u002F52669a65dc7f6c169d7c70a1d8dbb50ae8af1b596c859c3add20ad6f2d941254.wav",
                         "007b_thread.wav": "embedded\u002F9783947d9d5e46793aa780fa79e66888e65bc7da5b0ffc400725733001c99c8d.wav",
                         "007a_needles.wav": "embedded\u002Ffdb1999076d8b98acd1ddaaff50f6fe1d5f4bb9567fe4667233fef70f1ed5db5.wav",
-                        "011a_yane_.wav": "embedded\u002F0ff7b41881621277e258f17929634535a113847887ffce81cb941e58238bb242.wav"
+                        "011a_yane_.wav": "embedded\u002F0ff7b41881621277e258f17929634535a113847887ffce81cb941e58238bb242.wav",
+                        "011b_yuka_.wav": "embedded\u002F48c45477f27877233bbcdadf632bb75f8713fbdf65b9c708c76e39dbbb76171b.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal07",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"011a_yane_.wav\"] }",
+                            "src": "${ this.files[\"011b_yuka_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -26504,7 +26515,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -26516,7 +26527,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fInternal 08",
+                  "title": "jInternal 08",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -26779,7 +26790,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"008a_shoulders.wav\"] }",
+                            "src": "${ this.files[\"008b_fingers.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -26903,17 +26914,17 @@ const study = lab.util.fromObject({
                         "008b_fingers.wav": "embedded\u002Fa79a458748a7653a68f56908a94d99a104f50dfc797cca91ffd3d1785c02b89c.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal08",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"008b_fingers.wav\"] }",
+                            "src": "${ this.files[\"008a_shoulders.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -26925,7 +26936,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -26937,7 +26948,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jInternal 09",
+                  "title": "fInternal 09",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -27188,7 +27199,8 @@ const study = lab.util.fromObject({
                         "007a_needles.wav": "embedded\u002Ffdb1999076d8b98acd1ddaaff50f6fe1d5f4bb9567fe4667233fef70f1ed5db5.wav",
                         "008b_fingers.wav": "embedded\u002Fa79a458748a7653a68f56908a94d99a104f50dfc797cca91ffd3d1785c02b89c.wav",
                         "009a_head.wav": "embedded\u002Ff78338cbe6a6a276ccd97c9f080ddfd9859fb6a1bb28c082e27afe31feddf4c3.wav",
-                        "009b_back.wav": "embedded\u002F893d80cfdc509fec042d90adab11b97fbc317d3fc397e5ddc683e7467ea31c2f.wav"
+                        "009b_back.wav": "embedded\u002F893d80cfdc509fec042d90adab11b97fbc317d3fc397e5ddc683e7467ea31c2f.wav",
+                        "009a_branco_.wav": "embedded\u002F6a11ab07be98a0febd3e5be8430cfd6ff4d8da69cb553fc025f43127e3bfd513.wav"
                       },
                       "responses": {
                         "": ""
@@ -27201,7 +27213,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"009b_back.wav\"] }",
+                            "src": "${ this.files[\"009a_branco_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -27323,20 +27335,21 @@ const study = lab.util.fromObject({
                         "007b_thread.wav": "embedded\u002F9783947d9d5e46793aa780fa79e66888e65bc7da5b0ffc400725733001c99c8d.wav",
                         "008a_shoulders.wav": "embedded\u002F10fd2f245eafaebc811114c94dadc7838ca76ce0cbb85e5335f7b63a5f3ad025.wav",
                         "009b_back.wav": "embedded\u002F893d80cfdc509fec042d90adab11b97fbc317d3fc397e5ddc683e7467ea31c2f.wav",
-                        "009a_head.wav": "embedded\u002Ff78338cbe6a6a276ccd97c9f080ddfd9859fb6a1bb28c082e27afe31feddf4c3.wav"
+                        "009a_head.wav": "embedded\u002Ff78338cbe6a6a276ccd97c9f080ddfd9859fb6a1bb28c082e27afe31feddf4c3.wav",
+                        "009b_table_.wav": "embedded\u002F5743c13b2307f2d97105867207dc5ee757aa75ff4a5738d48f13601f7c3b44b3.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal09",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"009a_head.wav\"] }",
+                            "src": "${ this.files[\"009b_table_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -27348,7 +27361,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -27360,7 +27373,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "fInternal 10",
+                  "title": "jInternal 10",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -27625,7 +27638,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"010a_chin.wav\"] }",
+                            "src": "${ this.files[\"010b_shoulders.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -27751,17 +27764,17 @@ const study = lab.util.fromObject({
                         "010b_shoulders.wav": "embedded\u002F10fd2f245eafaebc811114c94dadc7838ca76ce0cbb85e5335f7b63a5f3ad025.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal10",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"010b_shoulders.wav\"] }",
+                            "src": "${ this.files[\"010a_chin.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -27773,7 +27786,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -27785,7 +27798,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jInternal 11",
+                  "title": "fInternal 11",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -28039,7 +28052,8 @@ const study = lab.util.fromObject({
                         "010b_shoulders.wav": "embedded\u002F10fd2f245eafaebc811114c94dadc7838ca76ce0cbb85e5335f7b63a5f3ad025.wav",
                         "011a_nails.wav": "embedded\u002Fae4b5aaaddbc1d6fbf1301f41f5f81e2e9630ea6dba3bbb9b681b7446ecef45d.wav",
                         "011b_skin.wav": "embedded\u002Fbbc6f7eea4d863c856e90c5fde7d75124577263073ba3275eb259cb2525b06ac.wav",
-                        "012b_apple_.wav": "embedded\u002F3e92478e0a040bc5acfd5e82ffc4f6f462b04adba07e24a448335d805c5b47e4.wav"
+                        "012b_apple_.wav": "embedded\u002F3e92478e0a040bc5acfd5e82ffc4f6f462b04adba07e24a448335d805c5b47e4.wav",
+                        "012a_melon_.wav": "embedded\u002Ff42c17e19b57202dd9f7b4116a1648eff0b04ebf427d7ab75a06b893d82fadb5.wav"
                       },
                       "responses": {
                         "": ""
@@ -28052,7 +28066,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"012b_apple_.wav\"] }",
+                            "src": "${ this.files[\"012a_melon_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -28177,20 +28191,21 @@ const study = lab.util.fromObject({
                         "010a_chin.wav": "embedded\u002F478310248c6afc4c2949d6b8fc4fef8a482f8811bab824233a513e41a22609b2.wav",
                         "011b_skin.wav": "embedded\u002Fbbc6f7eea4d863c856e90c5fde7d75124577263073ba3275eb259cb2525b06ac.wav",
                         "011a_nails.wav": "embedded\u002Fae4b5aaaddbc1d6fbf1301f41f5f81e2e9630ea6dba3bbb9b681b7446ecef45d.wav",
-                        "012a_melon_.wav": "embedded\u002Ff42c17e19b57202dd9f7b4116a1648eff0b04ebf427d7ab75a06b893d82fadb5.wav"
+                        "012a_melon_.wav": "embedded\u002Ff42c17e19b57202dd9f7b4116a1648eff0b04ebf427d7ab75a06b893d82fadb5.wav",
+                        "012b_apple_.wav": "embedded\u002F3e92478e0a040bc5acfd5e82ffc4f6f462b04adba07e24a448335d805c5b47e4.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal11",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"012a_melon_.wav\"] }",
+                            "src": "${ this.files[\"012b_apple_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -28202,7 +28217,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 }
@@ -28257,7 +28272,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jtaste01",
+                  "title": "ftaste01",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -28509,7 +28524,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"01b_soysource_.wav\"] }",
+                            "src": "${ this.files[\"001a_cream.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -28623,20 +28638,21 @@ const study = lab.util.fromObject({
                         "019b_vanilla.wav": "embedded\u002F4c9baaf26e628bc86fd6b9a74346fd55d9a89208f13bfc0bdc37587c3ae22d82.wav",
                         "001b_helmet.wav": "embedded\u002Fadcd4f80f27edd33e6c8428afdebfb6f182cd5024bb9c574117751a41f424663.wav",
                         "001b_juice.wav": "embedded\u002Fe3a1788ef9f94b88ae256ffbe01dc73e61138871222a81613c295de4635c6d8d.wav",
-                        "001a_cream.wav": "embedded\u002Fe2ba81f011d7300bb62bbacd5b073a52f9d4df932a296e90ae2f3493180aa04d.wav"
+                        "001a_cream.wav": "embedded\u002Fe2ba81f011d7300bb62bbacd5b073a52f9d4df932a296e90ae2f3493180aa04d.wav",
+                        "01b_soysource_.wav": "embedded\u002F708931a41b9d16b6131174304e7a94a6600c3d45ea8134e5c7aee94261110573.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste01",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"001a_cream.wav\"] }",
+                            "src": "${ this.files[\"01b_soysource_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -28648,7 +28664,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -28660,7 +28676,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "ftaste02",
+                  "title": "jtaste02",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -28912,7 +28928,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"002a_ninzin.wav\"] }",
+                            "src": "${ this.files[\"002b_kyuuri.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -29030,17 +29046,17 @@ const study = lab.util.fromObject({
                         "002b_kyuuri.wav": "embedded\u002Fe63fbe41232e4d28512c831f60a7a67741d9c3602b35ec478826680947f75bd6.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste02",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"002b_kyuuri.wav\"] }",
+                            "src": "${ this.files[\"002a_ninzin.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -29052,7 +29068,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -29064,7 +29080,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jtaste03",
+                  "title": "ftaste03",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -29316,7 +29332,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"003b_lemon.wav\"] }",
+                            "src": "${ this.files[\"003a_tomato.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -29434,17 +29450,17 @@ const study = lab.util.fromObject({
                         "003a_tomato.wav": "embedded\u002F4d80ecb6511135d7ca8af977a00f4f897781e1b4607423868865410bb8996ae1.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste03",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"003a_tomato.wav\"] }",
+                            "src": "${ this.files[\"003b_lemon.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -29456,7 +29472,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -29468,7 +29484,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "ftaste04",
+                  "title": "jtaste04",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -29722,7 +29738,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"004a_sugar.wav\"] }",
+                            "src": "${ this.files[\"004b_coffee.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -29842,17 +29858,17 @@ const study = lab.util.fromObject({
                         "004b_coffee.wav": "embedded\u002Fbc6ecbe6f4d874a70ba08e05b760a6d6eb35bddd88c9a0e2a1bdf9a3247b05ae.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste04",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"004b_coffee.wav\"] }",
+                            "src": "${ this.files[\"004a_sugar.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -29864,7 +29880,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -29876,7 +29892,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jtaste05",
+                  "title": "ftaste05",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -30132,7 +30148,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"005b_karashi.wav\"] }",
+                            "src": "${ this.files[\"005a_mirin.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -30253,17 +30269,17 @@ const study = lab.util.fromObject({
                         "005a_mirin.wav": "embedded\u002F1b5c78766d07b4329c607e72a0e0a4b92837fce4d78e838194e38c0479b28866.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste05",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"005a_mirin.wav\"] }",
+                            "src": "${ this.files[\"005b_karashi.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -30275,7 +30291,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -30287,7 +30303,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "ftaste06",
+                  "title": "jtaste06",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -30543,7 +30559,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"006a_juice.wav\"] }",
+                            "src": "${ this.files[\"006b_beer.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -30665,17 +30681,17 @@ const study = lab.util.fromObject({
                         "006b_beer.wav": "embedded\u002F9874723ba0bf460934dc5489e9be81c254639b2a7482cd7f15e2a686eebea49e.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste06",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"006b_beer.wav\"] }",
+                            "src": "${ this.files[\"006a_juice.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -30686,8 +30702,7 @@ const study = lab.util.fromObject({
                           "stop": "2000",
                           "priority": 0
                         }
-                      ],
-                      "correctResponse": "f"
+                      ]
                     }
                   ]
                 },
@@ -30699,7 +30714,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jtaste07",
+                  "title": "ftaste07",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -30956,7 +30971,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"007a_cake.wav\"] }",
+                            "src": "${ this.files[\"007b_cheese.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -31079,17 +31094,17 @@ const study = lab.util.fromObject({
                         "007a_cake.wav": "embedded\u002Fafc7b765f39bd4ada2c99eb9cbb3a329fe586db552a8217dcb71d737e0c79ebb.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste07",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"007b_cheese.wav\"] }",
+                            "src": "${ this.files[\"007a_cake.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -31101,7 +31116,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -31113,7 +31128,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "ftaste08",
+                  "title": "jtaste08",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -31371,7 +31386,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"008a_umi.wav\"] }",
+                            "src": "${ this.files[\"008b_ike.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -31495,17 +31510,17 @@ const study = lab.util.fromObject({
                         "008b_ike.wav": "embedded\u002F2e64da427295557d9455d10469cc7ebfdeb41d5f8ead4a7d1da16576db8950dd.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste08",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"008b_ike.wav\"] }",
+                            "src": "${ this.files[\"008a_umi.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -31517,7 +31532,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -31529,7 +31544,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jtaste09",
+                  "title": "ftaste09",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -31789,7 +31804,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"009b_ice.wav\"] }",
+                            "src": "${ this.files[\"009a_tear.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -31914,17 +31929,17 @@ const study = lab.util.fromObject({
                         "009a_tear.wav": "embedded\u002F44ae32234e2829beb414bdc1d6f8f31509563a162c698e84d7aa35cf694c6f45.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste09",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"009a_tear.wav\"] }",
+                            "src": "${ this.files[\"009b_ice.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -31936,7 +31951,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -31948,7 +31963,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "ftaste10",
+                  "title": "jtaste10",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -32200,7 +32215,8 @@ const study = lab.util.fromObject({
                         "012b_snekers.wav": "embedded\u002Fcb3bc352d5ecffe05df6919e56cd933178a2d8a665e958fbb6a2fe4f50b86226.wav",
                         "012b_cherry.wav": "embedded\u002F582737c31fb4452f846ea5399f28f00ce3f99d21ec5d1c18f49fc44403355f05.wav",
                         "012a_grapefruit.wav": "embedded\u002F880cab7d46a029beb9bb8c4e1a905434b164743ab5a217e386d09439d8cc7a35.wav",
-                        "012a_lemon.wav": "embedded\u002F3a9a4bf6a0a61eb0cea8335c683d3554ee012c5fde99bd0aab330522863f367a.wav"
+                        "012a_lemon.wav": "embedded\u002F3a9a4bf6a0a61eb0cea8335c683d3554ee012c5fde99bd0aab330522863f367a.wav",
+                        "012b_grape.wav": "embedded\u002Fb41cacc9e9c055616011c4198bd129a5a8fab6d348243cd3a16dba0f2c192617.wav"
                       },
                       "responses": {
                         "": ""
@@ -32213,7 +32229,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"012a_lemon.wav\"] }",
+                            "src": "${ this.files[\"012b_grape.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -32339,20 +32355,21 @@ const study = lab.util.fromObject({
                         "012a_highheels.wav": "embedded\u002F2a59d1a09cda203db8c3c6377f3d79ebe39469ff4fb29baa4f12093d5c6111a3.wav",
                         "012b_cherry.wav": "embedded\u002F582737c31fb4452f846ea5399f28f00ce3f99d21ec5d1c18f49fc44403355f05.wav",
                         "012a_grapefruit.wav": "embedded\u002F880cab7d46a029beb9bb8c4e1a905434b164743ab5a217e386d09439d8cc7a35.wav",
-                        "012b_grape.wav": "embedded\u002Fb41cacc9e9c055616011c4198bd129a5a8fab6d348243cd3a16dba0f2c192617.wav"
+                        "012b_grape.wav": "embedded\u002Fb41cacc9e9c055616011c4198bd129a5a8fab6d348243cd3a16dba0f2c192617.wav",
+                        "012a_lemon.wav": "embedded\u002F3a9a4bf6a0a61eb0cea8335c683d3554ee012c5fde99bd0aab330522863f367a.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste10",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"012b_grape.wav\"] }",
+                            "src": "${ this.files[\"012a_lemon.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -32364,7 +32381,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 },
@@ -32376,7 +32393,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "jtaste11",
+                  "title": "ftaste11",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -32629,7 +32646,8 @@ const study = lab.util.fromObject({
                         "013a_hanabi.wav": "embedded\u002Fbda4ba310f4c82c3fc10e640c31271425a8c7aea186ffa800fac5f551e9a74b7.wav",
                         "013a_lemon.wav": "embedded\u002F3a9a4bf6a0a61eb0cea8335c683d3554ee012c5fde99bd0aab330522863f367a.wav",
                         "013b_grape.wav": "embedded\u002Fb41cacc9e9c055616011c4198bd129a5a8fab6d348243cd3a16dba0f2c192617.wav",
-                        "013b_takuan_.wav": "embedded\u002F4b8898ad68e13eab7cc2611cc0562802f287aaaf0f34d97e1aaf56f364340a4a.wav"
+                        "013b_takuan_.wav": "embedded\u002F4b8898ad68e13eab7cc2611cc0562802f287aaaf0f34d97e1aaf56f364340a4a.wav",
+                        "013a_umeboshi_.wav": "embedded\u002Fea7a4b305b3b123aca66fe9f16cf6cdb9c6c943fe59437503631481aff04654c.wav"
                       },
                       "responses": {
                         "": ""
@@ -32642,7 +32660,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"013b_takuan_.wav\"] }",
+                            "src": "${ this.files[\"013a_umeboshi_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -32768,20 +32786,21 @@ const study = lab.util.fromObject({
                         "012a_highheels.wav": "embedded\u002F2a59d1a09cda203db8c3c6377f3d79ebe39469ff4fb29baa4f12093d5c6111a3.wav",
                         "013b_grape.wav": "embedded\u002Fb41cacc9e9c055616011c4198bd129a5a8fab6d348243cd3a16dba0f2c192617.wav",
                         "013a_lemon.wav": "embedded\u002F3a9a4bf6a0a61eb0cea8335c683d3554ee012c5fde99bd0aab330522863f367a.wav",
-                        "013a_umeboshi_.wav": "embedded\u002Fea7a4b305b3b123aca66fe9f16cf6cdb9c6c943fe59437503631481aff04654c.wav"
+                        "013a_umeboshi_.wav": "embedded\u002Fea7a4b305b3b123aca66fe9f16cf6cdb9c6c943fe59437503631481aff04654c.wav",
+                        "013b_takuan_.wav": "embedded\u002F4b8898ad68e13eab7cc2611cc0562802f287aaaf0f34d97e1aaf56f364340a4a.wav"
                       },
                       "responses": {
-                        "keypress(j)": "correct",
-                        "keypress(f)": "error"
+                        "keypress(f)": "correct",
+                        "keypress(j)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste11",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"013a_umeboshi_.wav\"] }",
+                            "src": "${ this.files[\"013b_takuan_.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -32793,7 +32812,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "j"
+                      "correctResponse": "f"
                     }
                   ]
                 },
@@ -32805,7 +32824,7 @@ const study = lab.util.fromObject({
                   },
                   "parameters": {},
                   "messageHandlers": {},
-                  "title": "ftaste12",
+                  "title": "jtaste12",
                   "content": [
                     {
                       "type": "lab.canvas.Screen",
@@ -33057,7 +33076,8 @@ const study = lab.util.fromObject({
                         "012b_snekers.wav": "embedded\u002Fcb3bc352d5ecffe05df6919e56cd933178a2d8a665e958fbb6a2fe4f50b86226.wav",
                         "012b_cherry.wav": "embedded\u002F582737c31fb4452f846ea5399f28f00ce3f99d21ec5d1c18f49fc44403355f05.wav",
                         "012a_grapefruit.wav": "embedded\u002F880cab7d46a029beb9bb8c4e1a905434b164743ab5a217e386d09439d8cc7a35.wav",
-                        "012a_lemon.wav": "embedded\u002F3a9a4bf6a0a61eb0cea8335c683d3554ee012c5fde99bd0aab330522863f367a.wav"
+                        "012a_lemon.wav": "embedded\u002F3a9a4bf6a0a61eb0cea8335c683d3554ee012c5fde99bd0aab330522863f367a.wav",
+                        "012b_grape.wav": "embedded\u002Fb41cacc9e9c055616011c4198bd129a5a8fab6d348243cd3a16dba0f2c192617.wav"
                       },
                       "responses": {
                         "": ""
@@ -33070,7 +33090,7 @@ const study = lab.util.fromObject({
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"012a_lemon.wav\"] }",
+                            "src": "${ this.files[\"012b_grape.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -33197,20 +33217,21 @@ const study = lab.util.fromObject({
                         "012b_cherry.wav": "embedded\u002F582737c31fb4452f846ea5399f28f00ce3f99d21ec5d1c18f49fc44403355f05.wav",
                         "012a_grapefruit.wav": "embedded\u002F880cab7d46a029beb9bb8c4e1a905434b164743ab5a217e386d09439d8cc7a35.wav",
                         "012b_grape.wav": "embedded\u002Fb41cacc9e9c055616011c4198bd129a5a8fab6d348243cd3a16dba0f2c192617.wav",
-                        "011b_apple_.wav": "embedded\u002F3e92478e0a040bc5acfd5e82ffc4f6f462b04adba07e24a448335d805c5b47e4.wav"
+                        "011b_apple_.wav": "embedded\u002F3e92478e0a040bc5acfd5e82ffc4f6f462b04adba07e24a448335d805c5b47e4.wav",
+                        "012a_lemon.wav": "embedded\u002F3a9a4bf6a0a61eb0cea8335c683d3554ee012c5fde99bd0aab330522863f367a.wav"
                       },
                       "responses": {
-                        "keypress(f)": "correct",
-                        "keypress(j)": "error"
+                        "keypress(j)": "correct",
+                        "keypress(f)": "error"
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste12",
                       "timeline": [
                         {
                           "type": "sound",
                           "payload": {
-                            "src": "${ this.files[\"011b_apple_.wav\"] }",
+                            "src": "${ this.files[\"012a_lemon.wav\"] }",
                             "loop": false
                           },
                           "gain": "",
@@ -33222,7 +33243,7 @@ const study = lab.util.fromObject({
                           "priority": 0
                         }
                       ],
-                      "correctResponse": "f"
+                      "correctResponse": "j"
                     }
                   ]
                 }
@@ -36625,16 +36646,16 @@ const study = lab.util.fromObject({
           "name": "language"
         },
         {
+          "required": false,
+          "type": "textarea",
+          "label": "気づいた点、不具合などあった場合にはご記入いただけると助かります。",
+          "name": "caution"
+        },
+        {
           "required": true,
           "type": "text",
           "title": "終了したら、最後に必ず、右下の「実験を終了する」ボタンを押してください。",
           "content": "右下の「実験を終了する」ボタンをクリックすると支払いコードが出現します。\nこのボタンを押さないとお支払いができなくなりますので、必ず押して終了してください。"
-        },
-        {
-          "required": false,
-          "type": "textarea",
-          "label": "気づいた点、不具合などあった場合には、ご記入いただけると助かります。",
-          "name": "caution"
         }
       ],
       "scrollTop": true,
@@ -36661,7 +36682,7 @@ const study = lab.util.fromObject({
           "stroke": null,
           "strokeWidth": 1,
           "fill": "black",
-          "text": "終了\n報酬を受け取るためのコードは\n\"hsk5567\"です。",
+          "text": "終了\n報酬を受け取るためのコードは\n\"hjgs234\"です。",
           "fontStyle": "normal",
           "fontWeight": "normal",
           "fontSize": 32,

@@ -28,7 +28,7 @@ const study = lab.util.fromObject({
       "items": [
         {
           "type": "text",
-          "content": "\u003Ch1\u003Eオンライン実験のご案内（PC専用）\u003C\u002Fh1\u003E\n\u003Cul\u003E\n  \u003Cli\u003E本実験は \u003Cstrong\u003E3つの課題\u003C\u002Fstrong\u003E と \u003Cstrong\u003E2つのアンケート\u003C\u002Fstrong\u003E で構成されています。\u003C\u002Fli\u003E\n  \u003Cli\u003E所要時間：\u003Cstrong\u003E約40分\u003C\u002Fstrong\u003E（回線や個人差で±10分）\u003C\u002Fli\u003E\n  \u003Cli\u003EPC（ノート\u002Fデスクトップ）専用。\u003Cstrong\u003Eスマホ\u002Fタブレット不可\u003C\u002Fstrong\u003E\u003C\u002Fli\u003E\n  \u003Cli\u003E音声が出ます。静かで実験に集中できる場所で実施してください。\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"
+          "content": "\u003Ch1\u003Eオンライン実験のご案内（PC専用）\u003C\u002Fh1\u003E\n\u003Cul\u003E\n  \u003Cli\u003E本実験は \u003Cstrong\u003E3つの課題\u003C\u002Fstrong\u003E と \u003Cstrong\u003E2つのアンケート\u003C\u002Fstrong\u003E で構成されています。\u003C\u002Fli\u003E\n  \u003Cli\u003E所要時間：\u003Cstrong\u003E約1時間\u003C\u002Fstrong\u003E（回線や個人差で±10分）\u003C\u002Fli\u003E\n  \u003Cli\u003EPC（ノート\u002Fデスクトップ）専用。\u003Cstrong\u003Eスマホ\u002Fタブレット不可\u003C\u002Fstrong\u003E\u003C\u002Fli\u003E\n  \u003Cli\u003E音声が出ます。静かで実験に集中できる場所で実施してください。\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"
         }
       ],
       "scrollTop": true,
@@ -57,7 +57,7 @@ const study = lab.util.fromObject({
           "items": [
             {
               "type": "text",
-              "content": "\u003Cp\u003Eこの調査は，イメージのしやすさの測定手法の開発を目的としています。\u003C\u002Fp\u003E\n\u003Cp\u003E回答に正解・不正解はありません。ご自身の思ったことを率直にご回答ください。\u003C\u002Fp\u003E\n\u003Cp\u003E以下の説明をよく読み，同意をしてくださった場合に，調査に参加していただくことになっています。\u003C\u002Fp\u003E\n\u003Cp\u003Eこの実験に想定される所要時間は，約20-30分前後です。\u003C\u002Fp\u003E\n\n\u003Cp\u003E本実験は３つのテストと2つの質問紙で構成されています。\u003C\u002Fp\u003E\nテスト毎に、実験者を呼ぶようアナウンスがあるので、室外で待機している実験者を呼んでください。\n\n準備ができたら、下の”始める”ボタンをクリックしてください。\n最初の実験が始まります。",
+              "content": "\u003Cp\u003Eこの調査は，イメージのしやすさの測定手法の開発を目的としています。\u003C\u002Fp\u003E\n\u003Cp\u003E回答に正解・不正解はありません。ご自身の思ったことを率直にご回答ください。\u003C\u002Fp\u003E\n\u003Cp\u003E以下の説明をよく読み，同意をしてくださった場合に，調査に参加していただくことになっています。\u003C\u002Fp\u003E\n\u003Cp\u003Eこの実験に想定される所要時間は，約20-30分前後です。\u003C\u002Fp\u003E\n\n準備ができたら、下の”始める”ボタンをクリックしてください。\n最初の実験が始まります。",
               "title": "イメージのしやすさに関する実験"
             }
           ],
@@ -4720,7 +4720,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual01",
                       "timeline": [
                         {
                           "type": "sound",
@@ -5074,7 +5074,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual02",
                       "timeline": [
                         {
                           "type": "sound",
@@ -5430,7 +5430,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual03",
                       "timeline": [
                         {
                           "type": "sound",
@@ -5789,7 +5789,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual04",
                       "timeline": [
                         {
                           "type": "sound",
@@ -6152,7 +6152,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual05",
                       "timeline": [
                         {
                           "type": "sound",
@@ -6515,7 +6515,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual06",
                       "timeline": [
                         {
                           "type": "sound",
@@ -6880,7 +6880,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual07",
                       "timeline": [
                         {
                           "type": "sound",
@@ -7247,7 +7247,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual08",
                       "timeline": [
                         {
                           "type": "sound",
@@ -7617,7 +7617,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual09",
                       "timeline": [
                         {
                           "type": "sound",
@@ -7990,7 +7990,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual10",
                       "timeline": [
                         {
                           "type": "sound",
@@ -8367,7 +8367,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual11",
                       "timeline": [
                         {
                           "type": "sound",
@@ -8746,7 +8746,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual12",
                       "timeline": [
                         {
                           "type": "sound",
@@ -9130,7 +9130,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual13",
                       "timeline": [
                         {
                           "type": "sound",
@@ -9518,7 +9518,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual14",
                       "timeline": [
                         {
                           "type": "sound",
@@ -9906,7 +9906,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual15",
                       "timeline": [
                         {
                           "type": "sound",
@@ -10296,7 +10296,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual16",
                       "timeline": [
                         {
                           "type": "sound",
@@ -10689,7 +10689,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual17",
                       "timeline": [
                         {
                           "type": "sound",
@@ -11083,7 +11083,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual18",
                       "timeline": [
                         {
                           "type": "sound",
@@ -11478,7 +11478,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "visual19",
                       "timeline": [
                         {
                           "type": "sound",
@@ -11918,7 +11918,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory01",
                       "timeline": [
                         {
                           "type": "sound",
@@ -12319,7 +12319,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory02",
                       "timeline": [
                         {
                           "type": "sound",
@@ -12720,7 +12720,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory03",
                       "timeline": [
                         {
                           "type": "sound",
@@ -13123,7 +13123,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory04",
                       "timeline": [
                         {
                           "type": "sound",
@@ -13530,7 +13530,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory05",
                       "timeline": [
                         {
                           "type": "sound",
@@ -13939,7 +13939,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory06",
                       "timeline": [
                         {
                           "type": "sound",
@@ -14350,7 +14350,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory07",
                       "timeline": [
                         {
                           "type": "sound",
@@ -14764,7 +14764,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory08",
                       "timeline": [
                         {
                           "type": "sound",
@@ -15180,7 +15180,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory09",
                       "timeline": [
                         {
                           "type": "sound",
@@ -15598,7 +15598,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory10",
                       "timeline": [
                         {
                           "type": "sound",
@@ -16018,7 +16018,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory11",
                       "timeline": [
                         {
                           "type": "sound",
@@ -16441,7 +16441,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory12",
                       "timeline": [
                         {
                           "type": "sound",
@@ -16866,7 +16866,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Auditory13",
                       "timeline": [
                         {
                           "type": "sound",
@@ -17317,7 +17317,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile01",
                       "timeline": [
                         {
                           "type": "sound",
@@ -17725,7 +17725,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile02",
                       "timeline": [
                         {
                           "type": "sound",
@@ -18129,7 +18129,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile03",
                       "timeline": [
                         {
                           "type": "sound",
@@ -18537,7 +18537,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile04",
                       "timeline": [
                         {
                           "type": "sound",
@@ -18947,7 +18947,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile05",
                       "timeline": [
                         {
                           "type": "sound",
@@ -19359,7 +19359,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile06",
                       "timeline": [
                         {
                           "type": "sound",
@@ -19774,7 +19774,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile07",
                       "timeline": [
                         {
                           "type": "sound",
@@ -20190,7 +20190,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile08",
                       "timeline": [
                         {
                           "type": "sound",
@@ -20609,7 +20609,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile09",
                       "timeline": [
                         {
                           "type": "sound",
@@ -21031,7 +21031,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile10",
                       "timeline": [
                         {
                           "type": "sound",
@@ -21457,7 +21457,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile12",
                       "timeline": [
                         {
                           "type": "sound",
@@ -21883,7 +21883,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile13",
                       "timeline": [
                         {
                           "type": "sound",
@@ -22313,7 +22313,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile14",
                       "timeline": [
                         {
                           "type": "sound",
@@ -22746,7 +22746,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile15",
                       "timeline": [
                         {
                           "type": "sound",
@@ -23166,7 +23166,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile16",
                       "timeline": [
                         {
                           "type": "sound",
@@ -23588,7 +23588,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Tactile17",
                       "timeline": [
                         {
                           "type": "sound",
@@ -24030,7 +24030,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal01",
                       "timeline": [
                         {
                           "type": "sound",
@@ -24436,7 +24436,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal02",
                       "timeline": [
                         {
                           "type": "sound",
@@ -24842,7 +24842,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal03",
                       "timeline": [
                         {
                           "type": "sound",
@@ -25250,7 +25250,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal04",
                       "timeline": [
                         {
                           "type": "sound",
@@ -25660,7 +25660,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal05",
                       "timeline": [
                         {
                           "type": "sound",
@@ -26075,7 +26075,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal06",
                       "timeline": [
                         {
                           "type": "sound",
@@ -26498,7 +26498,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal07",
                       "timeline": [
                         {
                           "type": "sound",
@@ -26919,7 +26919,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal08",
                       "timeline": [
                         {
                           "type": "sound",
@@ -27344,7 +27344,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal09",
                       "timeline": [
                         {
                           "type": "sound",
@@ -27769,7 +27769,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal10",
                       "timeline": [
                         {
                           "type": "sound",
@@ -28200,7 +28200,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "Internal11",
                       "timeline": [
                         {
                           "type": "sound",
@@ -28647,7 +28647,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste01",
                       "timeline": [
                         {
                           "type": "sound",
@@ -29051,7 +29051,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste02",
                       "timeline": [
                         {
                           "type": "sound",
@@ -29455,7 +29455,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste03",
                       "timeline": [
                         {
                           "type": "sound",
@@ -29863,7 +29863,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste04",
                       "timeline": [
                         {
                           "type": "sound",
@@ -30274,7 +30274,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste05",
                       "timeline": [
                         {
                           "type": "sound",
@@ -30686,7 +30686,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste06",
                       "timeline": [
                         {
                           "type": "sound",
@@ -31099,7 +31099,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste07",
                       "timeline": [
                         {
                           "type": "sound",
@@ -31515,7 +31515,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste08",
                       "timeline": [
                         {
                           "type": "sound",
@@ -31934,7 +31934,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste09",
                       "timeline": [
                         {
                           "type": "sound",
@@ -32364,7 +32364,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste10",
                       "timeline": [
                         {
                           "type": "sound",
@@ -32795,7 +32795,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste11",
                       "timeline": [
                         {
                           "type": "sound",
@@ -33226,7 +33226,7 @@ const study = lab.util.fromObject({
                       },
                       "parameters": {},
                       "messageHandlers": {},
-                      "title": "J",
+                      "title": "taste12",
                       "timeline": [
                         {
                           "type": "sound",
